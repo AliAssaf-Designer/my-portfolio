@@ -156,7 +156,7 @@ const web_data = [
         link: "https://aliassaf-designer.github.io/facebook-interface/",
         name: "Facebook Homepage Interface",
         languages: "HTML,CSS,JavaScript",
-        description: "simple facebook homepage using HTML, CSS and some JavaScript.",
+        description: "simple facebook homepage using HTML, CSS and some JavaScript for laptop.",
         image: "https://up6.cc/2024/06/171957712338891.png"
     },
     {

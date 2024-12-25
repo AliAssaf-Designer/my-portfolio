@@ -1,0 +1,272 @@
+{
+    "web courses":[
+        {
+            "id": "1",
+            "name": "تعلم Git و Github",
+            "date": "2024-7-22",
+            "lecture": "ELZero Web School Youtuber",
+            "description": "Explain the basics statement and instructions about the Git & Github.",
+            "link": "https://youtube.com/playlist?list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF&si=9ZkyNMcyt_ynSp_J"
+        },
+        {
+            "id": "2",
+            "name": "نور حمصي تعلم لغة ساس لبرمجة واجهات المواقع",
+            "date": "2024-7-22",
+            "lecture": "Nour Homsi Youtuber",
+            "description": "Explain the basics of the SASS on a simple website.",
+            "link": "https://www.youtube.com/watch?v=zmotal8b5Qc&list=PLPTNqXpQ2tbgJPXA07MUI3A2oxnOfB6z4&pp=iAQB"
+        },
+        {
+            "id": "3",
+            "name": "هكذا صممت المواقع الضخمة",
+            "date": "2024-7-8",
+            "lecture": "Nour Homsi Youtuber",
+            "description": "At every lesson from this courses design a website using different tech and explain about it.s",
+            "link": "https://www.youtube.com/watch?v=_DDGDTCQCc4&list=PLPTNqXpQ2tbi1dREPltindOpouDjDzzdH&pp=iAQB"
+        },
+        {
+            "id": "4",
+            "name": "تعلم البرمجة مع نور حمصي-مستوى متوسط",
+            "date": "2024-5-28",
+            "lecture": "Nour Homsi Youtuber",
+            "description": "Explain about JavaScript , jQuery, API and some other tips and software that can we use.",
+            "link": "https://www.youtube.com/watch?v=DQtpLon8FbE&list=PLPTNqXpQ2tbgiupUAclz5-gZRy07UTonn&pp=iAQB"
+        },
+        {
+            "id": "5",
+            "name": "دروس التقنية العربية",
+            "date": "2024-5-9",
+            "lecture": "Nour Homsi Youtuber",
+            "description": "Explain about some tips and programs and that can help us in daily work.",
+            "link": "https://youtube.com/playlist?list=PLPTNqXpQ2tbhzjAREWO1D2_hgagfekFDB&si=DviXdO4tTQXT1mQh"
+        },
+        {
+            "id": "6",
+            "name": "سؤال و جواب",
+            "date": "2024-4-30",
+            "lecture": "Nour Homsi Youtuber",
+            "description": "At every lesson he answer a question in web or graphic design or other things and explain about many things.",
+            "link": "https://youtube.com/playlist?list=PLPTNqXpQ2tbgJHTc4fQzq43T6ZmiKQaWJ&si=AHdRGQWC9bCjRTz4"
+        },
+        {
+            "id": "7",
+            "name": "دورة اساسيات جافا سكريبت",
+            "date": "2024-4-2",
+            "lecture": "Nour Homsi Youtuber",
+            "description": "This course explain about JavaScript, JQuery, Json with a simple application on that.",
+            "link": "https://www.youtube.com/watch?v=1l_8nECYRvQ&list=PLPTNqXpQ2tbg3LD_mAlVFwYSGXLaypyx-&pp=iAQB"
+        },
+        {
+            "id": "8",
+            "name": "دورة تصميم مواقع الإنترنت حتى الإحتراف-السلسة الكاملة",
+            "date": "2024-4-2",
+            "lecture": "Nour Homsi Youtuber",
+            "description": "It a workshop on a website including the following steps:<br>Layout on phsotoshopHTMLCSSfor mobilehow to upload it.",
+            "link": "https://www.youtube.com/watch?v=w3PWfFJiPRY&list=PLPTNqXpQ2tbhdCRHVR0C4bEivEx8AQ9BZ&pp=iAQB"
+        },
+        {
+            "id": "9",
+            "name": "تعلم HTML و CSS خطوة بخطوة (المستوى الرابع)",
+            "date": "2024-4-2",
+            "lecture": "Nour Homsi Youtuber",
+            "description": "Explain how to design a dropdown menu using just css and html.",
+            "link": "https://www.youtube.com/watch?v=0xy2EdK9IMs&list=PLPTNqXpQ2tbivRYcC-oEkzd2rmmWHBGcW&pp=iAQB"
+        },
+        {
+            "id": "10",
+            "name": "دورة إستخدام لوحة إدارة الاستضافة WHM",
+            "date": "2024-3-31",
+            "lecture": "استضافة فوست-مصر Youtube channel",
+            "description": "Explain how to work with the mother cpanel on reseller for web hosting which called WHM.",
+            "link": "https://www.youtube.com/watch?v=rd2v_-CU_dQ&list=PLtsniHplQOtTMAg3LYRwKndr6d7rBmHir&pp=iAQB"
+        },
+        {
+            "id": "11",
+            "name": "تعلم البرمجة مع نور حمصي- المستوى المبتدئ",
+            "date": "2024-3-30",
+            "lecture": "Nour Homsi Youtuber",
+            "description": "Explain about HTML, CSS, Bootstrap and some extra information about web.",
+            "link": "https://www.youtube.com/watch?v=j0m_VBNl-M8&list=PLPTNqXpQ2tbjl3zfOPo5vH_Hz8YP2yKcA&pp=iAQB"
+        },
+        {
+            "id": "12",
+            "name": "تعلم HTML و CSS خطوة بخطوة (المستوى الأول)",
+            "date": "2024-3-28",
+            "lecture": "Nour Homsi Youtuber",
+            "description": "Explain how to work with control panel cPanel that’s mange the domain and the host.",
+            "link": "https://www.youtube.com/watch?v=E1z1qWWCGGA&list=PLPTNqXpQ2tbj12WDefiTH0VgnrTacD9cE&pp=iAQB"
+        },
+        {
+            "id": "13",
+            "name": "الدورة الكاملة لتعلم إستخدام لوحة سي بانل cPanel",
+            "date": "2024-3-25",
+            "lecture": "استضافة فوست-مصر Youtube channel",
+            "description": "Explain how to work with control panel cPanel that’s mange the domain and the host.",
+            "link": "https://www.youtube.com/watch?v=W9h5VZ-Lb0E&list=PLtsniHplQOtSu9aiymRsfIWE7E9nkyIfH&pp=iAQB"
+        },
+        {
+            "id": "14",
+            "name": "كورس استضافة المواقع Web Hosting &- cpanel Course",
+            "date": "2024-3-15",
+            "lecture": "Bassem Magdy-Media Buyer Youtuber",
+            "description": "Explain how to work with control panel cPanel that’s mange the domain and the host.",
+            "link": "https://www.youtube.com/watch?v=_7eksoIr5Es&list=PLxe78bIBB8nVLclphz9Fkt8LGWD0Qc6E3&pp=iAQB"
+        },
+        {
+            "id": "15",
+            "name": "تعلم HTML و CSS خطوة بخطوة (المستوى الثالث)",
+            "date": "2024-3-20",
+            "lecture": "Nour Homsi Youtuber",
+            "description": "Explain about WordPress by transforming the website from the second level into a WordPress theme.",
+            "link": "https://www.youtube.com/watch?v=X5jxGMR-pYs&list=PLPTNqXpQ2tbjjSZ8JQhyvok2s0LSeCh0R&pp=iAQB"
+        },
+        {
+            "id": "16",
+            "name": "تعلم HTML و CSS خطوة بخطوة (المستوى الثاني)",
+            "date": "2024-3-15",
+            "lecture": "Nour Homsi Youtuber",
+            "description": "Explain new things in HTML5&CSS3 and build a small website with it.",
+            "link": "https://www.youtube.com/watch?v=9m6dNuxQxxg&list=PLPTNqXpQ2tbhUchotBAtHh0z3Bjq01DHD&pp=iAQB"
+        },
+        {
+            "id": "17",
+            "name": "أهم تعليمات لغة CSS",
+            "date": "2024-3-5",
+            "lecture": "Nour Homsi Youtuber",
+            "description": "Explain about the important statement and selectors in CSS.",
+            "link": "https://www.youtube.com/watch?v=lXw9TmTlXGE&list=PLPTNqXpQ2tbhqO793XtHPRxEkwnaOMIjR&pp=iAQB"
+        },
+        {
+            "id": "18",
+            "name": "دورة تعلم React كاملة افضل كورس رياكت 2024 | Learn React JS in Arabic",
+            "date": "2024-2-20",
+            "lecture": "Coder shiyar",
+            "description": "Explain the basics of React and how to write HTML, CSS and JS with it.",
+            "link": "https://www.youtube.com/watch?v=eQzJtPfsmW8&list=PLMTdZ61eBnypHk2R8xBGwk3Xwy8Ra5qjA&pp=iAQB"
+        },
+        {
+            "id": "19",
+            "name": "تعلم  jQuery باحترافية",
+            "date": "2024-2-11",
+            "lecture": "Elzero web school youtuber",
+            "description": "Explain the basics of it beginning from selectors and effects until almost the whole references of it’s.",
+            "link": "https://www.youtube.com/playlist?list=PLDoPjvoNmBAwXDFEEpc8TT6MFbDAC5XNB"
+        },
+        {
+            "id": "20",
+            "name": "JavaScript ES6 Tutorials",
+            "date": "2024-1-25",
+            "lecture": "TheNetNinja youtuber",
+            "description": "Explain what is the new in JavaScript version 6 and defined it.",
+            "link": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gKfw25slm4CUDUcM_sXdml"
+        },
+        {
+            "id": "21",
+            "name": "JavaScript",
+            "date": "2023-12-20",
+            "lecture": "coder shyiar",
+            "description": "Explain about JavaScript with maximal more and there is practicing on real website.",
+            "link": "https://mega.nz/file/QrNkEDpD#YrYz5zBgrEl0QjikMMB2pEzPy4kZz7ODKkCCzWTE_eY"
+        },
+        {
+            "id": "22",
+            "name": "Learning Bootstrap 5",
+            "date": "2023-8-21",
+            "lecture": "coder shyiar",
+            "description": "this course explains basics of Bootstrap 5.",
+            "link": "https://mega.nz/file/srVBWSTR#9NcIz1Hpyk6pfdNnSV8IIBCVmugeOvTP_aGTAoaZzzg"
+        },
+        {
+            "id": "23",
+            "name": "Learn CSS Full Course",
+            "date": "2023-7-23",
+            "lecture": "coder shyiar",
+            "description": "The course contains a full and comprehensive explanation about the CSS in its entirety even with regard to the responsive web",
+            "link": "https://mega.nz/file/x79XzRZL#r6kAJbRhT12UJ_jkmO9kYCR4NhPWcDylBuFi6TNwzZo"
+        },
+        {
+            "id": "24",
+            "name": "Learn HTML Full Course",
+            "date": "2023-6-22",
+            "lecture": "coder shyiar",
+            "description": "The course includes a detailed explanation of HTML And you give additional and new information about it",
+            "link": "https://mega.nz/file/Y2lzQSgb#V4kXRrchRlyoaH7I_a9eesFIYjRQ1o59sbX9K48r_fo"
+        },
+        {
+            "id": "25",
+            "name": "JavaScript Learning",
+            "date": "2023-2",
+            "lecture": "EL Zero Web School YouTube Channel",
+            "description": "The course explains the basics and Syntax of JavaScript .",
+            "link": "https://www.youtube.com/playlist?list=PLDoPjvoNmBAw6p0z0Ek0OjPzeXoqlFlCh"
+        }
+    ],
+    "graphic courses":[
+        {
+            "id": "26",
+            "name": "دورة شاملة في برنامج إنديزاين",
+            "date": "2024-9-1",
+            "lecture": "Nour Homsi youtuber",
+            "description": "In this courses, we are going to learn how to design a magazine from scrstch until you send it to the printing house and that by designing a simple magazine.",
+            "link": "https://youtube.com/playlist?list=PLPTNqXpQ2tbhdSm4P0gxxhxsoJnomfbC4&si=bB-ZcAXaKu7T28Iw"
+        },
+        {
+            "id": "27",
+            "name": "الإخراج الفني والتسويق و التنمية البشرية",
+            "date": "2024-8-24",
+            "lecture": "Nour Homsi youtuber",
+            "description": "Expalin about Visual Identity, Logos,…..,Graphic Design and some other things that are important for any one.",
+            "link": "https://youtube.com/playlist?list=PLPTNqXpQ2tbhiwgReYlo1h3wkHFWZDVu9&si=ogcHbByYiUXaO8Fd"
+        },
+        {
+            "id": "28",
+            "name": "التغذية البصرية والتعلم من الأخطاء الأكاديمية",
+            "date": "2023-12-1",
+            "lecture": "Nour Homsi youtuber",
+            "description": "Extract errors in some desgins to learn us how to do it",
+            "link": "https://www.youtube.com/watch?v=WbExlLdOsRk&list=PLPTNqXpQ2tbg2akDZZPonlnXWqrbqiZYh&pp=iAQB"
+        },
+        {
+            "id": "29",
+            "name": "قواعد التصميم الأكاديمية",
+            "date": "2023-11-20",
+            "lecture": "Nour Homsi youtuber",
+            "description": "Explain the eight principles about graphic and some extra info",
+            "link": "https://www.youtube.com/watch?v=aJ-AuZe0V4M&list=PLPTNqXpQ2tbgmAshpoR02QO4BfyWX3Dzs&pp=iAQB"
+        },
+        {
+            "id": "30",
+            "name": "InDesign",
+            "date": "2023-12-20",
+            "lecture": "Nour Homsi youtuber",
+            "description": "Explain about program interface and some technique and tips that can be use in the program",
+            "link": "https://youtube.com/playlist?list=PLPTNqXpQ2tbgJfd9KPsCwVhYg7PDsdtTB&si=muCls8a1z91dCMFc"
+        },
+        {
+            "id": "31",
+            "name": "Illustrator",
+            "date": "2023-10-15",
+            "lecture": "Nour Homsi youtuber",
+            "description": "Explain about program interface and some technique and tips that can be use in the program",
+            "link": "https://youtube.com/playlist?list=PLPTNqXpQ2tbhfi46e523TelnrzNDddVd6&si=wApE4ZekLTf4FdM5"
+        },
+        {
+            "id": "32",
+            "name": "Learn Photoshop Full Course",
+            "date": "2023-7-5",
+            "lecture": "Nour Homsi youtuber",
+            "description": "Explanation of the program's interface, tools and techniques, along with some advanced applications and technologies",
+            "link": "https://www.youtube.com/watch?v=52R9APHOx18&list=PLPTNqXpQ2tbjJjJiwegGONmGK-4mzz2Qj , https://www.youtube.com/embed/52R9APHOx18?si=nluG5XKXaueEk_eg"
+        }
+    ],
+    "other courses":[
+        {
+            "id": "33",
+            "name": "ICDL",
+            "date": "2020-10-27",
+            "lecture": "Teracourses Websites",
+            "description": "A simple course consisting of eight lessons, each lesson talking about One of Office programm With a good explain of it.",
+            "link": "https://mega.nz/file/1qVUmQTK#FVd8JWBlLw_puqPWN5CFFewhfxWA8pAycVYjS2VHjSY"
+        }
+    ]
+}

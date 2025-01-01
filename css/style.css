@@ -95,9 +95,9 @@ header{
         .navbar{
             display: block;
             text-align: center;
-            height: 40vh;
+            height: 55vh;
             .navbar-title{
-                height: 40%;
+                height: 30%;
                 font-size: 65px;
                 padding: calc(var(--primary-padding)*2) 0;
                 margin-bottom: 10px;
@@ -1092,7 +1092,6 @@ main{
             border-radius: 8px;
             padding: 10px;
             margin: 10px;
-            
             display: block;
             flex-direction: row;
             position: relative;
@@ -1202,9 +1201,6 @@ main{
                     h4{
                         font-size: 20px;
                     }
-                }
-                .graphic-link{
-                    width: 94%;
                 }
             }
         }

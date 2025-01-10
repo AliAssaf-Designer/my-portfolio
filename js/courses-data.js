@@ -294,7 +294,7 @@ const courses_info = [
         "date": "2020-10-27",
         "lecture": "Teracourses Websites",
         "description": "A simple course consisting of eight lessons, each lesson talking about One of Office programm With a good explain of it and ther is a certificate on this link: <a href='https://mega.nz/file/1qVUmQTK#FVd8JWBlLw_puqPWN5CFFewhfxWA8pAycVYjS2VHjSY'>certificate here</a>.",
-        "link": '<iframe class="video" width="560" height="315" src="https://teracourses.com/en/lesson/ICDL-course4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+        "link": '<a href="https://teracourses.com/en/lesson/ICDL-course4" style="font-size: 50px; margin-left: 50px; font-weight: bold;">Course Here</a>'
     }
 ];
 

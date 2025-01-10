@@ -1288,7 +1288,7 @@ main{
                 text-align: end;
                 margin-bottom: 15px;
             }
-            iframe{
+            .video{
                 width: 100%;
                 margin-bottom: 30px;
             }

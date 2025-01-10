@@ -1258,12 +1258,12 @@ main{
 
 .courses{
     width: 100%;
-    div{
-        h3{
+    .types{
+        .type-title{
             margin: 10px;
             font-size: 27px;
         }
-        div{
+        .type-courses{
         width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 30%);
@@ -1278,12 +1278,12 @@ main{
             cursor: pointer;
             display: block;
             position: relative;
-            h3{
+            .name{
                 font-size: 21px;
                 margin-bottom: 10px;
                 height: 10vh;
             }
-            h5{
+            .date{
                 font-style: italic;
                 text-align: end;
                 margin-bottom: 15px;
@@ -1316,20 +1316,20 @@ main{
 }
 @media (max-width: 768px) {
     .courses{
-        div{
-            h3{
+        .types{
+            .type-title{
                 margin: 15px;
                 font-size: 28px;
             }
-            div{
+            .type-courses{
             width: 90%;
             display: block;
             .course-card{
                 height: 675px;
-                h3{
+                .name{
                     font-size: 23px;
                 }
-                h5{
+                .date{
                     font-size: 15px;
                 }
                 .description{

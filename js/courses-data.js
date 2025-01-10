@@ -320,8 +320,8 @@ courses_info.map(course => {
 web_courses.map(web_course => {
     webCourses.innerHTML += `
     <div class="course-card" id="${web_course.id}">
-        <h3>${web_course.name}</h3>
-        <h5>${web_course.date}</h5>
+        <h3 class="name">${web_course.name}</h3>
+        <h5 class="date">${web_course.date}</h5>
         ${web_course.link}
         <p class="description">${web_course.description}</p>
         <p class="lecture">${web_course.lecture}</p>
@@ -331,8 +331,8 @@ web_courses.map(web_course => {
 graphic_courses.map(graphic_course => {
     graphicCourses.innerHTML += `
     <div class="course-card" id="${graphic_course.id}">
-        <h3>${graphic_course.name}</h3>
-        <h5>${graphic_course.date}</h5>
+        <h3 class="name">${graphic_course.name}</h3>
+        <h5 class="date">${graphic_course.date}</h5>
         ${graphic_course.link}
         <p class="description">${graphic_course.description}</p>
         <p class="lecture">${graphic_course.lecture}</p>
@@ -342,8 +342,8 @@ graphic_courses.map(graphic_course => {
 other_courses.map(other_course => {
     otherCourses.innerHTML += `
     <div class="course-card" id="${other_course.id}">
-        <h3>${other_course.name}</h3>
-        <h5>${other_course.date}</h5>
+        <h3 class="name">${other_course.name}</h3>
+        <h5 class="date">${other_course.date}</h5>
         ${other_course.link}
         <p class="description">${other_course.description}</p>
         <p class="lecture">${other_course.lecture}</p>

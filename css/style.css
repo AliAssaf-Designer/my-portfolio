@@ -11,6 +11,7 @@ html, *{
     -moz-scroll-behavior: smooth;
     -o-scroll-behavior: smooth;
     scroll-behavior: smooth;
+    font-family: 'Arial Rounded MT', Arial, sans-serif;
 }
 a{
     color: rgb(35, 35, 126);
@@ -53,7 +54,6 @@ header{
         box-shadow: var(--box-shadow-x-shift) var(--box-shadow-y-shift) var(--box-shadow-blur) var(--box-shadow-color);
         .navbar-title{
             font-size: 55px;
-            font-family: 'Arial Rounded MT';
             padding: var(--primary-padding) 0;
             cursor: pointer;
             letter-spacing: 5px;
@@ -71,7 +71,6 @@ header{
             justify-content: space-between;
             align-items: center;
             gap: var(--navbar-menu-gap);
-            font-family: 'Arial Rounded MT';
             .navbar-menu_item{
                 .navbar-menu_item-link{
                     color: white;
@@ -188,7 +187,6 @@ footer{
         display: grid;
         grid-template-columns: 75% 25%;
         margin: 0 30px;
-        font-family: 'Arial Rounded MT', Arial, sans-serif;
         justify-content: center;
         & div{
             margin: 0 5px;
@@ -229,7 +227,6 @@ footer{
         grid-template-columns: 75% 25%;
         margin: 0 30px;
         margin-bottom: 0px;
-        font-family: 'Arial Rounded MT', Arial, sans-serif;
         align-items: center;
         justify-content: center;
         & .body{
@@ -728,7 +725,7 @@ footer{
     }
 }
 
-main{
+.web-main{
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -839,7 +836,7 @@ main{
     }
 }
 @media (max-width: 768px) {
-    main{
+    .web-main{
         display: block;
         .type-menu{
             width: 100%;
@@ -891,7 +888,7 @@ main{
     }
 }
 @media (max-width: 992px) and (min-width: 768px){
-    main{
+    .web-main{
         display: block;
         .type-menu{
             width: 100%;
@@ -1300,9 +1297,9 @@ main{
         display: -moz-grid;
         display: -ms-grid;
         display: grid;
-        grid-template-columns: repeat(3, 33%);
+        grid-template-columns: repeat(3, 30%);
         justify-content: space-around;
-        margin: 20px 20px;
+        margin: 20px 0px;
         & .contact-item{
             display: -webkit-box;
             display: -moz-box;
@@ -1311,6 +1308,10 @@ main{
             display: flex;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 10px 5px var(--secondary-color);
+            border-radius: var(--primary-padding);
+            padding: 10px;
             & .contact-item_img{
                 margin-right: 10px;
                 width: 50px;
@@ -1326,13 +1327,23 @@ main{
                 font-weight: 600;
             }
         }
+        & .contact-item:hover{
+            background-color: var(--secondary-color);
+            box-shadow: 0 5px 5px var(--primary-color);
+            .contact-item_img{
+                border-radius: 10px;
+            }
+            .contact-item_link{
+                color: white;
+            }
+        }
     }
     .links{
         width: 100%;
-        font-family: 'Arial Rounded MT', Arial, sans-serif;
-        margin: 20px 20px;
+        margin: 20px 0px;
         .links-title{
             font-size: 40px;
+            margin-left: 10px;
         }
         .links-body{
             width: 100%;
@@ -1341,8 +1352,8 @@ main{
             display: -ms-flexbox;
             display: -webkit-flex;
             display: grid;
-            grid-template-columns: repeat(3, 33%);
-            justify-content: space-between;
+            grid-template-columns: repeat(3, 30%);
+            justify-content: space-around;
             align-items: center;
             & .links-item{
                 display: -webkit-box;
@@ -1352,7 +1363,11 @@ main{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin: 10px -5px;
+                margin: 10px 0px;
+                cursor: pointer;
+                box-shadow: 0 10px 5px var(--secondary-color);
+                border-radius: var(--primary-padding);
+                padding: 10px;
                 & .links-item_img{
                     margin-right: 10px;
                     width: 50px;
@@ -1366,6 +1381,16 @@ main{
                     -o-text-decoration: none;
                     text-decoration: none;
                     font-weight: 600;
+                }
+            }
+            & .links-item:hover{
+                background-color: var(--secondary-color);
+                box-shadow: 0 5px 5px var(--primary-color);
+                .links-item_img{
+                    border-radius: 10px;
+                }
+                .social-link{
+                    color: white;
                 }
             }
         }

@@ -1409,6 +1409,7 @@ footer{
                 justify-content: flex-start;
                 & .contact-item_link{
                     font-weight: 900;
+                    font-size: 16px;
                 }
             }
         }

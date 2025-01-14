@@ -1520,6 +1520,32 @@ footer{
             }
         }
     }
+    .contact-form{
+        height: 100vh;
+        .form-title{
+            width: 50% !important;
+        }
+        .form-content{
+            display: block !important;
+            .form{
+                width: 100% !important;
+                .name, .email{
+                    width: 90% !important;
+                    margin-bottom: 20%;
+                }
+                .message{
+                    width: 90% !important;
+                    margin-bottom: 20%;
+                }
+                .send{
+                    width: 50% !important;
+                }
+            }
+            .form-img{
+                display: none;
+            }
+        }
+    }
 }
 @media (min-width: 768px) and (max-width: 992px){
     .contact-me{

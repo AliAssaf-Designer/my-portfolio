@@ -1425,38 +1425,40 @@ footer{
                 display: grid;
                 align-content: space-around;
                 text-align: center;
-                .name, .email{
-                    width: 75%;
-                    height: 6vh;
-                    padding: 10px;
-                    border-radius: 10px;
-                    font-size: 13px;
-                    border: 1px solid rgb(71, 71, 71);
-                }
-                .message{
-                    width: 75%;
-                    height: 30vh;
-                    padding: 10px;
-                    border-radius: 10px;
-                    font-size: 16px;
-                }
-                .name:focus, .email:focus, .message:focus{
-                    outline: none;
-                    box-shadow: 0 5px 5px var(--secondary-color);
-                }
-                .send{
-                    width: 30%;
-                    height: 6vh;
-                    cursor: pointer;
-                    border-radius: 10px;
-                    border: none;
-                    background-color: var(--secondary-color);
-                    color: white;
-                    font-size: 21px;
-                }
-                .send:hover{
-                    background-color: var(--primary-color);
-                    transition: all 300ms;
+                div{
+                    .name, .email{
+                        width: 75%;
+                        height: 6vh;
+                        padding: 10px;
+                        border-radius: 10px;
+                        font-size: 13px;
+                        border: 1px solid rgb(71, 71, 71);
+                    }
+                    .message{
+                        width: 75%;
+                        height: 30vh;
+                        padding: 10px;
+                        border-radius: 10px;
+                        font-size: 16px;
+                    }
+                    .name:focus, .email:focus, .message:focus{
+                        outline: none;
+                        box-shadow: 0 5px 5px var(--secondary-color);
+                    }
+                    .send{
+                        width: 30%;
+                        height: 6vh;
+                        cursor: pointer;
+                        border-radius: 10px;
+                        border: none;
+                        background-color: var(--secondary-color);
+                        color: white;
+                        font-size: 21px;
+                    }
+                    .send:hover{
+                        background-color: var(--primary-color);
+                        transition: all 300ms;
+                    }
                 }
             }
             .form-img{
@@ -1529,16 +1531,18 @@ footer{
             display: block !important;
             .form{
                 width: 100% !important;
-                .name, .email{
-                    width: 90% !important;
-                    margin-bottom: 15%;
-                }
-                .message{
-                    width: 90% !important;
-                    margin-bottom: 15%;
-                }
-                .send{
-                    width: 50% !important;
+                div{
+                    .name, .email{
+                        width: 90% !important;
+                        margin-bottom: 15%;
+                    }
+                    .message{
+                        width: 90% !important;
+                        margin-bottom: 15%;
+                    }
+                    .send{
+                        width: 50% !important;
+                    }
                 }
             }
             .form-img{
@@ -1587,11 +1591,13 @@ footer{
         }
         .form-content{
             .form{
-                .name, .email{
-                    margin-bottom: 10%;
-                }
-                .message{
-                    margin-bottom: 5%;
+                div{
+                    .name, .email{
+                        margin-bottom: 10%;
+                    }
+                    .message{
+                        margin-bottom: 5%;
+                    }
                 }
             }
             .form-img{

@@ -1531,11 +1531,11 @@ footer{
                 width: 100% !important;
                 .name, .email{
                     width: 90% !important;
-                    margin-bottom: 20%;
+                    margin-bottom: 15%;
                 }
                 .message{
                     width: 90% !important;
-                    margin-bottom: 20%;
+                    margin-bottom: 15%;
                 }
                 .send{
                     width: 50% !important;
@@ -1578,6 +1578,24 @@ footer{
                         font-weight: 900;
                     }
                 }
+            }
+        }
+    }
+    .contact-form{
+        .form-title{
+            width: 25% !important;
+        }
+        .form-content{
+            .form{
+                .name, .email{
+                    margin-bottom: 10%;
+                }
+                .message{
+                    margin-bottom: 5%;
+                }
+            }
+            .form-img{
+                height: 100%;
             }
         }
     }

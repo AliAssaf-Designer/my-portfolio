@@ -746,7 +746,7 @@ footer{
         grid-template-columns: repeat(3, 30%);
         justify-content: space-around;
         margin: 20px 0px;
-        & .contact-item{
+        .contact-item{
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
@@ -762,11 +762,11 @@ footer{
             -o-border-radius: var(--primary-padding);
             border-radius: var(--primary-padding);
             padding: 10px;
-            & .contact-item_img{
+            .contact-item_img{
                 margin-right: 10px;
                 width: 50px;
             }
-            & .contact-item_link{
+            .contact-item_link{
                 font-size: 18px;
                 -webkit-text-decoration: none;
                 -moz-text-decoration: none;
@@ -777,7 +777,7 @@ footer{
                 font-weight: 600;
             }
         }
-        & .contact-item:hover{
+        .contact-item:hover{
             background-color: var(--secondary-color);
             box-shadow: 0 5px 5px var(--primary-color);
             .contact-item_img{
@@ -824,11 +824,11 @@ footer{
                 -o-border-radius: var(--primary-padding);
                 border-radius: var(--primary-padding);
                 padding: 10px;
-                & .links-item_img{
+                .links-item_img{
                     margin-right: 10px;
                     width: 50px;
                 }
-                & .social-link{
+                .social-link{
                     font-size: 18px;
                     color: var(--secondary-color);
                     -webkit-text-decoration: none;
@@ -839,7 +839,7 @@ footer{
                     font-weight: 600;
                 }
             }
-            & .links-item:hover{
+            .links-item:hover{
                 background-color: var(--secondary-color);
                 box-shadow: 0 5px 5px var(--primary-color);
                 .links-item_img{
@@ -999,11 +999,11 @@ footer{
             display: block;
             justify-content: space-around;
             margin: 20px 20px;
-            & .contact-item{
+            .contact-item{
                 width: 90%;
                 margin-bottom: 15px;
                 justify-content: flex-start;
-                & .contact-item_link{
+                .contact-item_link{
                     font-weight: 900;
                     font-size: 16px;
                 }
@@ -1017,11 +1017,11 @@ footer{
             }
             .links-body{
                 display: block;
-                & .links-item{
+                .links-item{
                     width: 90%;
                     justify-content: flex-start;
                     margin-bottom: 15px;
-                    & .social-link{
+                    .social-link{
                         font-weight: 900;
                     }
                 }
@@ -1062,11 +1062,11 @@ footer{
             display: block;
             justify-content: space-around;
             margin: 20px 20px;
-            & .contact-item{
+            .contact-item{
                 width: 90%;
                 margin-bottom: 15px;
                 justify-content: flex-start;
-                & .contact-item_link{
+                .contact-item_link{
                     font-weight: 900;
                 }
             }
@@ -1078,11 +1078,11 @@ footer{
             }
             .links-body{
                 display: block;
-                & .links-item{
+                .links-item{
                     width: 90%;
                     justify-content: flex-start;
                     margin-bottom: 15px;
-                    & .social-link{
+                    .social-link{
                         font-weight: 900;
                     }
                 }

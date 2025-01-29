@@ -1662,11 +1662,11 @@ footer{
                 .introduction{
                     display: block;
                     .myImg{
-                        margin-left: 100px;
+                        /* margin-left: 100px; */
                         margin-top: 75px;
-                        .image{
+                        /* .image{
                             width: 75%;
-                        }
+                        } */
                     }
                     .intro{
                         .intro-title{

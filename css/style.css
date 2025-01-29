@@ -1656,13 +1656,14 @@ footer{
     .cv-main{
         .slider{
             .slide{
-                height: 150vh;
+                height: 140vh;
                 padding: 10px;
                 background-size: 100% 100%;
                 .introduction{
                     display: block;
                     .myImg{
                         margin-left: 100px;
+                        margin-top: 75px;
                         .image{
                             width: 75%;
                         }
@@ -1686,6 +1687,14 @@ footer{
                         margin-top: 100px;
                         .graduate-place{
                             text-align: center;
+                        }
+                        .graduate-link{
+                            display: grid;
+                            justify-content: start;
+                            gap: 20px;
+                            .certificate-link{
+                                text-align: center;
+                            }
                         }
                     }
                 }

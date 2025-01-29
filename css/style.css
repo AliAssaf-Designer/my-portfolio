@@ -1656,17 +1656,13 @@ footer{
     .cv-main{
         .slider{
             .slide{
-                height: 140vh;
+                height: 130vh;
                 padding: 10px;
                 background-size: 100% 100%;
                 .introduction{
                     display: block;
                     .myImg{
-                        /* margin-left: 100px; */
                         margin-top: 75px;
-                        /* .image{
-                            width: 75%;
-                        } */
                     }
                     .intro{
                         .intro-title{
@@ -1682,9 +1678,11 @@ footer{
                     display: block;
                     .graduate-info{
                         margin: 50px 0;
+                        font-size: 25px;
                     }
                     .university{
                         margin-top: 100px;
+                        margin-left: 20px;
                         .graduate-place{
                             text-align: center;
                         }
@@ -1714,8 +1712,8 @@ footer{
                         }
                     }
                     .experience-job_icon{
-                        margin-top: -190px;
-                        margin-left: 20px;
+                        margin-top: -210px;
+                        margin-left: -50px;
                         transform: rotate(-25deg);
                     }
                 }

@@ -165,566 +165,6 @@ footer{
     }
 }
 
-.cv-main{
-    margin-top: 60px;
-    color: var(--secondary-color);
-    .border{
-        height: 320vh;
-        -webkit-border-left: 10px solid var(--secondary-color);
-            -moz-border-left: 10px solid var(--secondary-color);
-            -ms-border-left: 10px solid var(--secondary-color);
-            -o-border-left: 10px solid var(--secondary-color);
-            border-left: 10px solid var(--secondary-color);
-        position: absolute;
-        margin-top: -10vh;
-        -webkit-transform: rotate(1deg);
-        -ms-transform: rotate(1deg);
-        transform: rotate(1deg);
-    }
-    .header{
-        display: -moz-grid;
-        display: -ms-grid;
-        display: grid;
-        grid-template-columns: 75% 25%;
-        margin: 0 30px;
-        justify-content: center;
-        & div{
-            margin: 0 5px;
-        }
-        & .myImg{
-            text-align: center;
-            & img{
-                width: 100%;
-                -webkit-border-radius: 15px;
-                -moz-border-radius: 15px;
-                -ms-border-radius: 15px;
-                -o-border-radius: 15px;
-                border-radius: 15px;
-                box-shadow: 0 0 35px rgb(88, 88, 88);
-            }
-            & h4{
-                margin: 10px 0;
-                font-size: 25px;
-            }
-        }
-        & .intro{
-            & h1{
-                font-size: 120px;
-                margin-bottom: 10px;
-            }
-            & p{
-                width: 85%;
-                font-size: 26px;
-                font-weight: 500;
-                margin-top: 25px;
-            }
-        }
-    }
-    .container{
-        display: -moz-grid;
-        display: -ms-grid;
-        display: grid;
-        grid-template-columns: 75% 25%;
-        margin: 0 30px;
-        margin-bottom: 0px;
-        align-items: center;
-        justify-content: center;
-        & .body{
-            & div{
-                & h2{
-                    font-size: 65px;
-                    margin: 20px 0 10px;
-                    letter-spacing: 2px;
-                }
-                & div{
-                    display: -webkit-box;
-                    display: -moz-box;
-                    display: -ms-flexbox;
-                    display: -webkit-flex;
-                    display: flex;
-                    align-items: center;
-                    padding: 10px 0;
-                    & h5,span,h3{
-                        margin-right: 40px;
-                    }
-                    & h5{
-                        font-size: 30px;
-                    }
-                    & h3{
-                        font-size: 40px;
-                    }
-                    & span{
-                        font-size: 23px;
-                        margin-top: 10px;
-                    }
-                }
-                & p{
-                    font-size: 27px;
-                    margin-bottom: 15px;
-                    margin-right: 5px;
-                }
-                & a{
-                    -webkit-text-decoration: none;
-                    -moz-text-decoration: none;
-                    -ms-text-decoration: none;
-                    -o-text-decoration: none;
-                    text-decoration: none;
-                    font-weight: bold;
-                    font-size: 21px;
-                }
-                & h3{
-                    font-size: 34px;
-                    margin-bottom: 5px;
-                }
-                & .onlineCourses{
-                    display: block;
-                    & p:nth-of-type(2){
-                        font-size: 20px;
-                    }
-                    & div{
-                        & p{
-                            margin-right: 25px;
-                        }
-                    }
-                }
-            }
-            & .experience{
-                & p{
-                    font-size: 32px;
-                }
-            }
-            & .training{
-                & p:nth-of-type(2){
-                    width: 100%;
-                    font-size: 20px;
-                    margin-bottom: 20px;
-                }
-                & a{
-                    font-size: 30px;
-                    font-weight: 600;
-                    margin-left: 35px;
-                }
-            }
-        }
-        & .sideBar{
-            & div{
-                & h3{
-                    font-size: 48px;
-                    margin-bottom: 20px;
-                }
-            }
-            & .skills{
-                & ul{
-                    list-style-type: none;
-                    margin-bottom: 25px;
-                    & li{
-                        font-size: 25px;
-                        font-weight: 400;
-                        margin-bottom: 6px;
-                    }
-                }
-            }
-            & .achievs{
-                & div{
-                    padding-bottom: 30px;
-                    & p:first-child{
-                        font-size: 25px;
-                        font-weight: 600;
-                        margin-bottom: 15px;
-                    }
-                    & h4{
-                        font-size: 30px;
-                        margin-bottom: 15px;
-                    }
-                    & p:nth-of-type(2){
-                        font-size: 20px;
-                        font-weight: 600;
-                        margin-bottom: 10px;
-                    }
-                    & a{
-                        -webkit-text-decoration: none;
-                        -moz-text-decoration: none;
-                        -ms-text-decoration: none;
-                        -o-text-decoration: none;
-                        text-decoration: none;
-                        font-size: 11px;
-                        font-weight: 600;
-                    }
-                }
-            }
-            & .languages{
-                & ul{
-                    list-style-type: none;
-                    margin-bottom: 20px;
-                    & li{
-                        font-size: 20px;
-                        font-weight: 600;
-                        margin-bottom: 5px;
-                    }
-                }
-            }
-        }
-    }
-}
-@media (max-width: 768px){
-    .cv-main{
-        .border{
-            display: none;
-        }
-        .header{
-            display: flex;
-            flex-direction: column-reverse;
-            & div{
-                margin: 0 10px;
-            }
-            & .myImg{
-                text-align: center;
-                & img{
-                    width: 75%;
-                }
-                h4{
-                    font-size: 14px;
-                }
-            }
-            & .intro{
-                & h1{
-                    font-size: 72px;
-                }
-                & p{
-                    font-size: 17px;
-                    font-weight: 600;
-                }
-                & .contact{
-                    display: block;
-                    & div{
-                        margin: 5px 0px;
-                        & img{
-                            margin-right: 5px;
-                        }
-                        & a,span{
-                            font-size: 13px;
-                            font-weight: 500;
-                        }
-                    }
-                }
-            }
-        }
-        .container{
-            display: block;
-            & .body{
-                & div{
-                    & h2{
-                        font-size: 40px;
-                    }
-                    & div{
-                        display: block;
-                        & h5{
-                            font-size: 20px;
-                        }
-                        & h3{
-                            font-size: 30px;
-                        }
-                        & span{
-                            font-size: 15px;
-                        }
-                    }
-                    & p{
-                        font-size: 14px;
-                    }
-                    & a{
-                        font-weight: 700;
-                        font-size: 10px;
-                    }
-                    & h3{
-                        font-size: 24px;
-                    }
-                    & .onlineCourses{
-                        & p:nth-of-type(2){
-                            font-size: 15px;
-                        }
-                        & div{
-                            & p{
-                                margin-right: 15px;
-                            }
-                        }
-                    }
-                }
-                & .experience{
-                    & p{
-                        font-size: 22px;
-                    }
-                }
-                & .training{
-                    & p:nth-of-type(2){
-                        font-size: 12px;
-                        margin-bottom: 15px;
-                    }
-                    & a{
-                        font-size: 20px;
-                        font-weight: 500;
-                    }
-                }
-            }
-            & .sideBar{
-                & div{
-                    & h3{
-                        font-size: 40px;
-                        margin-bottom: 20px;
-                    }
-                }
-                & .skills{
-                    & ul{
-                        margin-bottom: 20px;
-                        & li{
-                            font-size: 15px;
-                            font-weight: 500;
-                            margin-bottom: 5px;
-                        }
-                    }
-                }
-                & .achievs{
-                    & div{
-                        padding-bottom: 20px;
-                        & p:first-child{
-                            font-size: 15px;
-                            font-weight: 500;
-                            margin-bottom: 10px;
-                        }
-                        & h4{
-                            font-size: 20px;
-                            margin-bottom: 10px;
-                        }
-                        & p:nth-of-type(2){
-                            font-size: 14px;
-                            font-weight: 500;
-                            margin-bottom: 5px;
-                        }
-                        & a{
-                            font-weight: 500;
-                        }
-                    }
-                }
-                & .languages{
-                    & ul{
-                        margin-bottom: 10px;
-                        & li{
-                            font-size: 15px;
-                            font-weight: 500;
-                            margin-bottom: 0px;
-                        }
-                    }
-                }
-            }
-        }
-        & .links{
-            margin-top: 15px;
-            display: block;
-            h3{
-                display: block;
-                font-size: 35px;
-            }
-            & div{
-                & div{
-                    margin: 5px 0px;
-                    & img{
-                        margin-right: 5px;
-                    }
-                    & .social-link{
-                        font-size: 12px;
-                        font-weight: 500;
-                    }
-                }
-            }
-        }
-    }
-}
-@media (min-width: 768px) and (max-width: 992px){
-    .cv-main{
-        .header{
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            flex-wrap: wrap;
-            & div{
-                margin: 0;
-            }
-            & .myImg{
-                width: 50%;
-                & img{
-                    width: 80%;
-                }
-                h4{
-                    font-size: 24px;
-                }
-            }
-            & .intro{
-                width: 50%;
-                & h1{
-                    font-size: 62px;
-                    font-weight: bold;
-                }
-                & p{
-                    font-size: 15px;
-                    font-weight: 500;
-                }
-                & .contact{
-                    display: block;
-                    margin-top: 32px;
-                    & div{
-                        width: 100%;
-                        margin: 10px 0;
-                        & img{
-                            margin-right: 10px;
-                        }
-                        & a,span{
-                            font-size: 14px;
-                            font-weight: 400;
-                        }
-                    }
-                }
-            }
-            & .links{
-                margin-top: 15px;
-                width: 100%;
-                margin-bottom: 0;
-                & h3{
-                    font-size:30px;
-                }
-                & div{
-                    display: -webkit-box;
-                    display: -moz-box;
-                    display: -ms-flexbox;
-                    display: -webkit-flex;
-                    display: flex;
-                    justify-content: space-around;
-                    & div{
-                        display: block;
-                        & img{
-                            margin-right: 5px;
-                        }
-                        & .social-link{
-                            font-size: 10px;
-                            font-weight: 500;
-                        }
-                    }
-                }
-            }
-        }
-        .container{
-            display: block;
-            & .body{
-                & div{
-                    & h2{
-                        font-size: 55px;
-                    }
-                    & div{
-                        & h5{
-                            font-size: 17px;
-                            margin-right: 0px;
-                            font-weight: 500;
-                        }
-                        & h3{
-                            font-size: 27px;
-                        }
-                        & span{
-                            font-size: 16px;
-                            margin-top: 0px;
-                        }
-                    }
-                    & p{
-                        font-size: 17px;
-                    }
-                    & a{
-                        font-weight: 700;
-                        font-size: 13px;
-                    }
-                    & h3{
-                        font-size: 24px;
-                    }
-                    & .onlineCourses{
-                        & p:nth-of-type(2){
-                            font-size: 15px;
-                        }
-                        & div{
-                            & p{
-                                margin-right: 15px;
-                            }
-                        }
-                    }
-                }
-                & .experience{
-                    & p{
-                        font-size: 22px;
-                    }
-                }
-                & .training{
-                    & p:nth-of-type(2){
-                        font-size: 15px;
-                        margin-bottom: 15px;
-                    }
-                    & a{
-                        font-size: 20px;
-                        font-weight: 500;
-                    }
-                }
-            }
-            & .sideBar{
-                & div{
-                    & h3{
-                        font-size: 35px;
-                        margin-bottom: 20px;
-                    }
-                }
-                & .skills{
-                    & ul{
-                        margin-bottom: 20px;
-                        & li{
-                            font-size: 17px;
-                            font-weight: 500;
-                            margin-bottom: 5px;
-                        }
-                    }
-                }
-                & .achievs{
-                    & div{
-                        padding-bottom: 20px;
-                        & p:first-child{
-                            font-size: 15px;
-                            font-weight: 500;
-                            margin-bottom: 10px;
-                        }
-                        & h4{
-                            font-size: 20px;
-                            margin-bottom: 10px;
-                        }
-                        & p:nth-of-type(2){
-                            font-size: 14px;
-                            font-weight: 500;
-                            margin-bottom: 5px;
-                        }
-                        & a{
-                            font-weight: 500;
-                            font-size: 13px;
-                        }
-                    }
-                }
-                & .languages{
-                    & ul{
-                        margin-bottom: 10px;
-                        & li{
-                            font-size: 15px;
-                            font-weight: 500;
-                            margin-bottom: 0px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
 .web-main{
     display: -webkit-box;
     display: -moz-box;
@@ -1198,6 +638,8 @@ footer{
         }
         .type-courses{
         width: 100%;
+        display: -moz-grid;
+        display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(3, 30%);
         justify-content: space-around;
@@ -1206,6 +648,10 @@ footer{
             height: 650px;
             box-shadow: 5px 5px 20px var(--secondary-color);
             margin: 20px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
             border-radius: 10px;
             padding: 15px;
             cursor: pointer;
@@ -1310,6 +756,10 @@ footer{
             justify-content: center;
             cursor: pointer;
             box-shadow: 0 10px 5px var(--secondary-color);
+            -webkit-border-radius: var(--primary-padding);
+            -moz-border-radius: var(--primary-padding);
+            -ms-border-radius: var(--primary-padding);
+            -o-border-radius: var(--primary-padding);
             border-radius: var(--primary-padding);
             padding: 10px;
             & .contact-item_img{
@@ -1331,6 +781,10 @@ footer{
             background-color: var(--secondary-color);
             box-shadow: 0 5px 5px var(--primary-color);
             .contact-item_img{
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
                 border-radius: 10px;
             }
             .contact-item_link{
@@ -1347,10 +801,8 @@ footer{
         }
         .links-body{
             width: 100%;
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
+            display: -moz-grid;
+            display: -ms-grid;
             display: grid;
             grid-template-columns: repeat(3, 30%);
             justify-content: space-around;
@@ -1366,6 +818,10 @@ footer{
                 margin: 10px 0px;
                 cursor: pointer;
                 box-shadow: 0 10px 5px var(--secondary-color);
+                -webkit-border-radius: var(--primary-padding);
+                -moz-border-radius: var(--primary-padding);
+                -ms-border-radius: var(--primary-padding);
+                -o-border-radius: var(--primary-padding);
                 border-radius: var(--primary-padding);
                 padding: 10px;
                 & .links-item_img{
@@ -1387,6 +843,10 @@ footer{
                 background-color: var(--secondary-color);
                 box-shadow: 0 5px 5px var(--primary-color);
                 .links-item_img{
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
                     border-radius: 10px;
                 }
                 .social-link{
@@ -1402,10 +862,18 @@ footer{
     .contact-form{
         width: calc(100% - 40px);
         height: 100vh;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
         border-radius: 20px;
         margin: 20px;
         padding: 20px;
         position: relative;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
         border-radius: 20px;
         z-index: 1;
         background-image: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color));
@@ -1419,9 +887,15 @@ footer{
         .form-content{
             width: 100%;
             height: 100%;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
             display: flex;
             .form{
                 width: 50%;
+                display: -moz-grid;
+                display: -ms-grid;
                 display: grid;
                 align-content: space-around;
                 margin-left: 30px;
@@ -1429,14 +903,26 @@ footer{
                     width: 75%;
                     height: 6vh;
                     padding: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
                     border-radius: 10px;
                     font-size: 13px;
+                    -webkit-border: 1px solid rgb(71, 71, 71);
+                    -moz-border: 1px solid rgb(71, 71, 71);
+                    -ms-border: 1px solid rgb(71, 71, 71);
+                    -o-border: 1px solid rgb(71, 71, 71);
                     border: 1px solid rgb(71, 71, 71);
                 }
                 .message{
                     width: 75%;
                     height: 30vh;
                     padding: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
                     border-radius: 10px;
                     font-size: 16px;
                 }
@@ -1448,7 +934,15 @@ footer{
                     width: 30%;
                     height: 6vh;
                     cursor: pointer;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
                     border-radius: 10px;
+                    -webkit-border: none;
+                    -moz-border: none;
+                    -ms-border: none;
+                    -o-border: none;
                     border: none;
                     background-color: var(--secondary-color);
                     color: white;
@@ -1456,17 +950,27 @@ footer{
                 }
                 .send:hover{
                     background-color: var(--primary-color);
+                    -webkit-transition: all 300ms;
+                    -moz-transition: all 300ms;
+                    -o-transition: all 300ms;
                     transition: all 300ms;
                 }
             }
             .form-img{
                 width: 50%;
                 height: 95%;
+                -webkit-border-radius: 150px 30px;
+                -moz-border-radius: 150px 30px;
+                -ms-border-radius: 150px 30px;
+                -o-border-radius: 150px 30px;
                 border-radius: 150px 30px;
                 box-shadow: 0px -5px 10px var(--primary-color);
             }
             .form-img:hover{
                 transform: rotate(180deg);
+                -webkit-transition: all 1.5s;
+                -moz-transition: all 1.5s;
+                -o-transition: all 1.5s;
                 transition: all 1.5s;
             }
         }
@@ -1477,6 +981,10 @@ footer{
         background-color: white;
         width: calc(100% - 20px);
         height: calc(100% - 20px);
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
         border-radius: 20px;
         position: absolute;
         left: 10px;
@@ -1547,7 +1055,7 @@ footer{
         }
     }
 }
-@media (min-width: 768px) and (max-width: 992px){
+@media (max-width: 992px) and (min-width: 768px) {
     .contact-me{
         .contact{
             width: 90%;
@@ -1596,6 +1104,889 @@ footer{
             }
             .form-img{
                 height: 100%;
+            }
+        }
+    }
+}
+
+.cv-main{
+    color: var(--secondary-color);
+    .slider{
+        width: 100%;
+        color: white;
+        .slide{
+            height: 75vh;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            padding: 20px;
+            .introduction{
+                width: 100%;
+                display: -moz-grid;
+                display: -ms-grid;
+                display: grid;
+                grid-template-columns: 75% 25%;
+                justify-content: space-around;
+                align-content: center;
+                .myImg{
+                    margin: 10px;
+                    .image{
+                        width: 100%;
+                        -webkit-border-radius: 15px;
+                        -moz-border-radius: 15px;
+                        -ms-border-radius: 15px;
+                        -o-border-radius: 15px;
+                        border-radius: 15px;
+                        box-shadow: 0 0 35px rgb(88, 88, 88);
+                    }
+                }
+                .intro{
+                    margin: auto 0;
+                    .intro-title{
+                        font-size: 157px;
+                        cursor: pointer;
+                        margin-bottom: 10px;
+                    }
+                    .intro-title:hover{
+                        color: var(--primary-color);
+                    }
+                    .intro-description{
+                        font-size: 24px;
+                        font-weight: 500;
+                        margin-right: 110px;
+                    }
+                }
+            }
+            .graduate{
+                text-align: center;
+                display: -moz-grid;
+                display: -ms-grid;
+                display: grid;
+                grid-template-columns: 40% 50%;
+                gap: 60px;
+                .graduate-info{
+                    font-size: 30px;
+                    margin: 90px 0;
+                    line-height: 50px;
+                    font-weight: 800;
+                    cursor: pointer;
+                    -webkit-border-radius: 15px;
+                    -moz-border-radius: 15px;
+                    -ms-border-radius: 15px;
+                    -o-border-radius: 15px;
+                    border-radius: 15px;
+                    padding: 20px 10px;
+                }
+                .graduate-info:hover{
+                    box-shadow: 0 0 10px var(--primary-color);
+                    font-weight: 600;
+                }
+                .university{
+                    margin-top: 120px;
+                    text-align: start;
+                    .graduate-title{
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                        font-weight: bold;
+                        word-spacing: 5px;
+                        line-height: 35px;
+                    }
+                    .graduate-place{
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin-bottom: 40px;
+                        font-style: italic;
+                        text-align: end;
+                    }
+                    .graduate-link{
+                        font-size: 21px;
+                        margin: 10px 20px;
+                        .certificate-link{
+                            -webkit-text-decoration: none;
+                            -moz-text-decoration: none;
+                            -ms-text-decoration: none;
+                            -o-text-decoration: none;
+                            text-decoration: none;
+                            font-weight: bold;
+                            font-size: 22px;
+                            background-color: var(--primary-color);
+                            padding: 10px;
+                            color: white;
+                            -webkit-border-radius: 15px;
+                            -moz-border-radius: 15px;
+                            -ms-border-radius: 15px;
+                            -o-border-radius: 15px;
+                            border-radius: 15px;
+                        }
+                        .certificate-link:hover{
+                            -webkit-text-decoration: underline;
+                            -moz-text-decoration: underline;
+                            -ms-text-decoration: underline;
+                            -o-text-decoration: underline;
+                            text-decoration: underline;
+                            color: var(--secondary-color);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .slide1{
+            background-image: url(https://images3.alphacoders.com/245/thumb-1920-245765.jpg);
+        }
+        .slide2{
+            background-image: url(https://pixelz.cc/wp-content/uploads/2017/01/red-and-blue-triangles-patern-uhd-4k-wallpaper.jpg);
+        }
+    }
+    .experience{
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+        margin-bottom: 60px;
+        .experience-title{
+            font-size: 60px;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+        .experience-freelance{
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+        .experience-job{
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .experience-job_card{
+                width: 45%;
+                height: 60vh;
+                padding: 30px;
+                overflow: hidden;
+                cursor: pointer;
+                .experience-job_title{
+                    font-size: 25px;
+                    margin-bottom: 25px;
+                }
+                .experience-job_skills{
+                    list-style-type:  disclosure-closed;
+                    .experience-job_skill{
+                        margin-bottom: 15px;
+                        font-size: 14px;
+                    }
+                }
+                .experience-job_icon{
+                    width: 850px;
+                    margin-top: -190px;
+                    margin-left: 40px;
+                    transform: rotate(-35deg);
+                }
+            }
+            .experience-job_card:hover{
+                background-color: var(--primary-color);
+                color: white;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                -ms-border-radius: 15px;
+                -o-border-radius: 15px;
+                border-radius: 15px;
+                box-shadow: 5px 5px 5px var(--secondary-color);
+                .experience-job_skills{
+                    .experience-job_skill{
+                        font-size: 15px;
+                    }
+                }
+                .experience-job_icon{
+                    filter: brightness(100);
+                }
+            }
+        }
+    }
+    .training{
+        text-align: center;
+        width: 50%;
+        margin: 20px auto;
+        .training-title{
+            width: 100%;
+            margin: 20px auto;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: var(--secondary-color);
+            color: white;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px var(--box-shadow-color);
+            .training-title_img{
+                width: 125px;
+                height: 125px;
+                margin: 15px;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                border-radius: 50%;
+            }
+            .training-title_name{
+                font-size: 32px;
+            }
+        }
+        .training-title:hover{
+            color: var(--primary-color);
+        }
+        .training-company{
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+            .training-company_img{
+                width: 50px;
+                height: 50px;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                border-radius: 50%;
+                -webkit-border: 2px solid var(--secondary-color);
+                -moz-border: 2px solid var(--secondary-color);
+                -ms-border: 2px solid var(--secondary-color);
+                -o-border: 2px solid var(--secondary-color);
+                border: 2px solid var(--secondary-color);
+                margin-left: 30px;
+            }
+            .training-company_title{
+                font-size: 16px;
+            }
+        }
+        .training-info{
+            width: 100%;
+            margin: 15px 0;
+            -webkit-border: 2px solid var(--secondary-color);
+            -moz-border: 2px solid var(--secondary-color);
+            -ms-border: 2px solid var(--secondary-color);
+            -o-border: 2px solid var(--secondary-color);
+            border: 2px solid var(--secondary-color);
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            border-radius: 20px;
+            padding: 15px;
+            .training-info_title{
+                margin: 10px;
+                font-size: 14px;
+                word-spacing: 1px;
+            }
+            .training-info_languages{
+                height: 10vh;
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                justify-content: space-around;
+                list-style-type: none;
+                font-weight: bold;
+                .training-info_language{
+                    -webkit-text-decoration: underline;
+                    -moz-text-decoration: underline;
+                    -ms-text-decoration: underline;
+                    -o-text-decoration: underline;
+                    text-decoration: underline;
+                    .training-info_language-title{
+                        margin-bottom: 10px;
+                    }
+                    .training-info_language-img{
+                        width: 40px;
+                        height: 40px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        .training-info:hover{
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        .training-link{
+            font-size: 19px;
+            margin-bottom: 20px;
+            .training-link_link{
+                font-weight: bold;
+            }
+        }
+        .training-date{
+            font-style: italic;
+            font-size: 18px;
+            margin-left: 280px;
+        }
+    }
+    .skills{
+        .skills-title{
+            font-size: 32px;
+            margin: 15px;
+        }
+        .skills-container{
+            width: 100%;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
+            .skills-type{
+                width: 35%;
+                height: auto;
+                background-image: url(https://www.cecimo.eu/wp-content/uploads/2013/09/skills-1024x737.jpg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                border-top: 3px solid var(--secondary-color);
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                -ms-border-radius: 15px;
+                -o-border-radius: 15px;
+                border-radius: 15px;
+                padding: 10px;
+                .skills-type_title{
+                    margin: 10px 0;
+                }
+                .skills-type_list{
+                    width: 100%;
+                    height: 6vh;
+                    cursor: pointer;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    border-radius: 10px;
+                    padding: 5px;
+                    color: var(--secondary-color);
+                    font-weight: 500;
+                    .skills-type_list-item{
+                        background-color: var(--secondary-color);
+                        color: white;
+                        -webkit-border: 2px solid black;
+                        -moz-border: 2px solid black;
+                        -ms-border: 2px solid black;
+                        -o-border: 2px solid black;
+                        border: 2px solid black;
+                    }
+                }
+                .skills-type_list:focus{
+                    outline: none;
+                    box-shadow: 0 0 10px var(--secondary-color);
+                }
+                .skill-progress{
+                    margin: 20px;
+                    .skill-progress_title{
+                        font-size: 12px;
+                        margin-bottom: 10px;
+                    }
+                    .skill-progress-bar{
+                        background-color: var(--box-shadow-color);
+                        margin: 10px 0;
+                        width: 100%;
+                        height: 4vh;
+                        line-height: 4vh;
+                        text-align: center;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        -ms-border-radius: 5px;
+                        -o-border-radius: 5px;
+                        border-radius: 5px;
+                        .skill-progress-bar_value{
+                            background-color: var(--primary-color);
+                            color: white;
+                            border-start-start-radius: 5px;
+                            border-end-start-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .achievements{
+        margin-bottom: 20px;
+        .achievs-title{
+            text-align: center;
+            font-size: 32px;
+            background-color: var(--secondary-color);
+            color: white;
+            width: 50%;
+            margin: 40px auto;
+            padding: 10px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+            border-radius: 15px;
+        }
+        .achievs-cards{
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 20px;
+            .achiev-card{
+                width: 40%;
+                height: 40vh;
+                cursor: pointer;
+                -webkit-border: 2px solid var(--secondary-color);
+                -moz-border: 2px solid var(--secondary-color);
+                -ms-border: 2px solid var(--secondary-color);
+                -o-border: 2px solid var(--secondary-color);
+                border: 2px solid var(--secondary-color);
+                padding: 10px;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                -ms-border-radius: 15px;
+                -o-border-radius: 15px;
+                border-radius: 15px;
+                margin-bottom: 10px;
+                position: relative;
+                .card-title{
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    -webkit-border-radius: 15px;
+                    -moz-border-radius: 15px;
+                    -ms-border-radius: 15px;
+                    -o-border-radius: 15px;
+                    border-radius: 15px;
+                }
+                .card-date{
+                    font-size: 14px;
+                    margin-left: 40px;
+                    font-style: italic;
+                    margin-bottom: 10px;
+                }
+                .card-description{
+                    margin-bottom: 10px;
+                }
+                .card-link{
+                    text-align: center;
+                    margin: 0 130px;
+                    width: 50%;
+                    background-color: var(--secondary-color);
+                    color: white;
+                    padding: 10px;
+                    -webkit-border-radius: 15px;
+                    -moz-border-radius: 15px;
+                    -ms-border-radius: 15px;
+                    -o-border-radius: 15px;
+                    border-radius: 15px;
+                    position: absolute;
+                    bottom: 10px;
+                }
+            }
+            .achiev-card:hover{
+                background-color: var(--primary-color);
+                color: white;
+                -webkit-border: none;
+                -moz-border: none;
+                -ms-border: none;
+                -o-border: none;
+                border: none;
+                box-shadow: 5px 5px 5px var(--secondary-color);
+                .card-link{
+                    background-color: white;
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+    .languages{
+        width: 75%;
+        padding: 10px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .languages-title{
+            width: 25%;
+            font-size: 32px;
+            margin-left: 40px;
+        }
+        .languages-list{
+            width: 75%;
+            list-style-type: none;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: space-around;
+            .languages-list-item{
+                font-size: 18px;
+            }
+            .languages-list-item:hover{
+                -webkit-text-decoration: underline;
+                -moz-text-decoration: underline;
+                -ms-text-decoration: underline;
+                -o-text-decoration: underline;
+                text-decoration: underline;
+                line-height: 20px;
+                font-size: 20px;
+                color: var(--primary-color);
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .cv-main{
+        .slider{
+            .slide{
+                height: 150vh;
+                padding: 10px;
+                background-size: 100% 100%;
+                .introduction{
+                    display: block;
+                    .myImg{
+                        margin-left: 100px;
+                        .image{
+                            width: 75%;
+                        }
+                    }
+                    .intro{
+                        .intro-title{
+                            font-size: 95px;
+                        }
+                        .intro-description{
+                            font-size: 22px;
+                            margin-right: 0px;
+                        }
+                    }
+                }
+                .graduate{
+                    display: block;
+                    .graduate-info{
+                        margin: 50px 0;
+                    }
+                    .university{
+                        margin-top: 100px;
+                        .graduate-place{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .experience{
+            margin: 30px 0;
+            .experience-job{
+                display: block;
+                .experience-job_card{
+                    width: calc(100% - 40px);
+                    margin: 30px 20px;
+                    .experience-job_skills{
+                        .experience-job_skill{
+                            margin-bottom: 20px;
+                            font-size: 13px;
+                        }
+                    }
+                    .experience-job_icon{
+                        margin-top: -190px;
+                        margin-left: 20px;
+                        transform: rotate(-25deg);
+                    }
+                }
+                .experience-job_card:hover{
+                    .experience-job_skills{
+                        .experience-job_skill{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .training{
+            width: 90%;
+            .training-title{
+                .training-title_img{
+                    width: 100px;
+                    height: 100px;
+                }
+                .training-title_name{
+                    font-size: 28px;
+                }
+            }
+            .training-company{
+                width: 95%;
+            }
+            .training-info{
+                padding: 10px;
+                .training-info_title{
+                    font-size: 15px;
+                }
+                .training-info_languages{
+                    height: 85vh;
+                    display: block;
+                    .training-info_language{
+                        margin: 24px;
+                        float: left;
+                        .training-info_language-title{
+                            margin-bottom: 5px;
+                        }
+                        .training-info_language-img{
+                            width: 100px;
+                            height: 100px;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+            .training-date{
+                font-size: 17px;
+                margin-left: 260px;
+            }
+        }
+        .skills{
+            .skills-container{
+                width: calc(100% - 40px);
+                display: block;
+                margin: 20px;
+                .skills-type{
+                    width: calc(100% - 40px);
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .achievements{
+            .achievs-title{
+                width: 75%;
+            }
+            .achievs-cards{
+                display: block;
+                .achiev-card{
+                    width: calc(100% - 40px);
+                    margin: 20px;
+                    margin-bottom: 20px;
+                    .card-title{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .languages{
+            width: 90%;
+            display: block;
+            .languages-title{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .languages-list{
+                width: 100%;
+                .languages-list-item{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+    .cv-main{
+        .slider{
+            .slide{
+                height: 60vh;
+                .introduction{
+                    grid-template-columns: 70% 30%;
+                    .intro{
+                        margin: auto 0;
+                        .intro-title{
+                            font-size: 104px;
+                        }
+                        .intro-description{
+                            font-size: 26px;
+                            margin-right: 0px;
+                        }
+                    }
+                }
+                .graduate{
+                    grid-template-columns: 50% 50%;
+                    gap: 30px;
+                    .graduate-info{
+                        font-size: 27px;
+                        margin: 20px 0;
+                    }
+                    .university{
+                        margin-top: 80px;
+                        .graduate-title{
+                            font-size: 21px;
+                            word-spacing: 3px;
+                        }
+                        .graduate-place{
+                            font-size: 17px;
+                            font-weight: 500;
+                            text-align: center;
+                            margin-left: 110px;
+                        }
+                        .graduate-link{
+                            font-size: 20px;
+                            margin: 20px;
+                            .certificate-link{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .experience{
+            .experience-freelance{
+                font-size: 23px;
+            }
+            .experience-job{
+                .experience-job_card{
+                    width: 47%;
+                    .experience-job_title{
+                        font-size: 23px;
+                    }
+                    .experience-job_skills{
+                        .experience-job_skill{
+                            font-size: 13px;
+                        }
+                    }
+                    .experience-job_icon{
+                        width: 600px;
+                        margin-top: -140px;
+                        margin-left: 30px;
+                    }
+                }
+                .experience-job_card:hover{
+                    .experience-job_skills{
+                        .experience-job_skill{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .training{
+            width: 75%;
+            .training-title{
+                margin: 25px auto;
+                .training-title_img{
+                    width: 100px;
+                    height: 100px;
+                }
+                .training-title_name{
+                    font-size: 30px;
+                    margin-left: -100px;
+                }
+            }
+            .training-company{
+                width: 75%;
+                .training-company_img{
+                    margin-left: 40px;
+                }
+            }
+            .training-info{
+                margin: 20px 0;
+                padding: 20px;
+                .training-info_title{
+                    margin: 10px 0;
+                    font-size: 13px;
+                    word-spacing: 0px;
+                }
+                .training-info_languages{
+                    margin-bottom: 10px;
+                    .training-info_language{
+                        .training-info_language-title{
+                            margin-bottom: 10px;
+                        }
+                        .training-info_language-img{
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+            .training-link{
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+            .training-date{
+                font-size: 17px;
+                margin-left: 240px;
+            }
+        }
+        .skills{
+            .skills-title{
+                font-size: 30px;
+            }
+            .skills-container{
+                .skills-type{
+                    width: 45%;
+                    .skills-type_title{
+                        margin: 15px 0;
+                    }
+                    .skills-type_list{
+                        height: 7vh;
+                    }
+                    .skill-progress{
+                        .skill-progress-bar{
+                            height: 5vh;
+                            line-height: 5vh;
+                        }
+                    }
+                }
+            }
+        }
+        .achievements{
+            .achievs-title{
+                font-size: 30px;
+            }
+            .achievs-cards{
+                gap: 0px;
+                .achiev-card{
+                    width: 45%;
+                    height: 45vh;
+                    padding: 15px;
+                    .card-title{
+                        font-size: 19px;
+                        margin-bottom: 15px;
+                        padding: 0px;
+                    }
+                    .card-date{
+                        font-size: 13px;
+                        margin-left: 50px;
+                        margin-bottom: 15px;
+                    }
+                    .card-link{
+                        margin: 0 160px;
+                    }
+                }
+            }
+        }
+        .languages{
+            padding: 15px;
+            .languages-title{
+                font-size: 30px;
+            }
+            .languages-list{
+                .languages-list-item{
+                    font-size: 17px;
+                }
             }
         }
     }

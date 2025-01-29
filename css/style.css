@@ -1131,6 +1131,7 @@ footer{
                     margin: 10px;
                     .image{
                         width: 100%;
+                        height: auto;
                         -webkit-border-radius: 15px;
                         -moz-border-radius: 15px;
                         -ms-border-radius: 15px;
@@ -1141,16 +1142,8 @@ footer{
                 }
                 .intro{
                     margin: auto 0;
-                    .intro-title{
-                        font-size: 157px;
-                        cursor: pointer;
-                        margin-bottom: 10px;
-                    }
-                    .intro-title:hover{
-                        color: var(--primary-color);
-                    }
                     .intro-description{
-                        font-size: 24px;
+                        font-size: 32px;
                         font-weight: 500;
                         margin-right: 110px;
                     }
@@ -1665,9 +1658,6 @@ footer{
                         margin-top: 75px;
                     }
                     .intro{
-                        .intro-title{
-                            font-size: 95px;
-                        }
                         .intro-description{
                             font-size: 22px;
                             margin-right: 0px;
@@ -1819,9 +1809,6 @@ footer{
                     grid-template-columns: 70% 30%;
                     .intro{
                         margin: auto 0;
-                        .intro-title{
-                            font-size: 104px;
-                        }
                         .intro-description{
                             font-size: 26px;
                             margin-right: 0px;

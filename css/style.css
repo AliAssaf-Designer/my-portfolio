@@ -1649,7 +1649,7 @@ footer{
     .cv-main{
         .slider{
             .slide{
-                height: 130vh;
+                height: 120vh;
                 padding: 10px;
                 background-size: 100% 100%;
                 .introduction{
@@ -1703,7 +1703,7 @@ footer{
                     }
                     .experience-job_icon{
                         margin-top: -180px;
-                        margin-left: -100px;
+                        margin-left: -150px;
                         transform: rotate(-25deg);
                     }
                 }
@@ -1737,16 +1737,16 @@ footer{
                 }
                 .training-info_languages{
                     height: 85vh;
-                    display: block;
+                    display: flex;
+                    flex-wrap: wrap;
                     .training-info_language{
                         margin: 24px;
-                        float: left;
                         .training-info_language-title{
                             margin-bottom: 5px;
                         }
                         .training-info_language-img{
-                            width: 100px;
-                            height: 100px;
+                            width: 75px;
+                            height: 75px;
                             object-fit: contain;
                         }
                     }
@@ -1754,7 +1754,7 @@ footer{
             }
             .training-date{
                 font-size: 17px;
-                margin-left: 260px;
+                margin-left: 230px;
             }
         }
         .skills{
@@ -1763,8 +1763,9 @@ footer{
                 display: block;
                 margin: 20px;
                 .skills-type{
+                    margin: 0 auto;
                     width: calc(100% - 40px);
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
                 }
             }
         }
@@ -1780,6 +1781,9 @@ footer{
                     margin-bottom: 20px;
                     .card-title{
                         font-size: 20px;
+                    }
+                    .card-description{
+                        font-size: 15px;
                     }
                 }
             }

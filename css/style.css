@@ -1649,7 +1649,7 @@ footer{
     .cv-main{
         .slider{
             .slide{
-                height: 120vh;
+                height: 110vh;
                 padding: 10px;
                 background-size: 100% 100%;
                 .introduction{
@@ -1702,7 +1702,7 @@ footer{
                         }
                     }
                     .experience-job_icon{
-                        margin-top: -180px;
+                        margin-top: -170px;
                         margin-left: -150px;
                         transform: rotate(-25deg);
                     }
@@ -1743,6 +1743,7 @@ footer{
                         margin: 24px;
                         .training-info_language-title{
                             margin-bottom: 5px;
+                            font-size: 14px;
                         }
                         .training-info_language-img{
                             width: 75px;
@@ -1761,11 +1762,11 @@ footer{
             .skills-container{
                 width: calc(100% - 40px);
                 display: block;
-                margin: 20px;
+                margin: 15px;
                 .skills-type{
                     margin: 0 auto;
-                    width: calc(100% - 40px);
-                    margin-bottom: 30px;
+                    width: calc(100% - 20px);
+                    margin-bottom: 40px;
                 }
             }
         }

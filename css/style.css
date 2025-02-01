@@ -14,7 +14,7 @@ html, *{
     font-family: 'Arial Rounded MT', Arial, sans-serif;
 }
 a{
-    color: var(--secondary-color);
+    color: black;
     -webkit-text-decoration: none;
     -moz-text-decoration: none;
     -ms-text-decoration: none;
@@ -635,9 +635,6 @@ footer{
         .type-title{
             margin: 10px;
             font-size: 27px;
-            .type-title_link{
-                color: black;
-            }
         }
         .type-courses{
         width: 100%;
@@ -649,7 +646,7 @@ footer{
         .course-card{
             width: 100%;
             height: 650px;
-            box-shadow: 5px 5px 20px var(--secondary-color);
+            box-shadow: -5px 5px 20px var(--secondary-color);
             margin: 20px;
             -webkit-border-radius: 10px;
             -moz-border-radius: 10px;
@@ -691,7 +688,7 @@ footer{
         .course-card:hover{
             background-color: var(--secondary-color);
             color: white;
-            box-shadow: 5px 5px 20px var(--primary-color);
+            box-shadow: -5px 5px 20px var(--primary-color);
         }
         }
     }
@@ -1522,7 +1519,7 @@ footer{
     }
     .achievements{
         margin-bottom: 20px;
-        .achievs-title{
+        .achievements-title{
             text-align: center;
             font-size: 32px;
             background-color: var(--secondary-color);
@@ -1536,7 +1533,7 @@ footer{
             -o-border-radius: 15px;
             border-radius: 15px;
         }
-        .achievs-cards{
+        .achievements-cards{
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
@@ -1545,7 +1542,7 @@ footer{
             justify-content: space-evenly;
             align-items: center;
             gap: 20px;
-            .achiev-card{
+            .achievement-card{
                 width: 40%;
                 height: 40vh;
                 cursor: pointer;
@@ -1571,6 +1568,9 @@ footer{
                     -ms-border-radius: 15px;
                     -o-border-radius: 15px;
                     border-radius: 15px;
+                    .card-title_link{
+                        color: var(--secondary-color);
+                    }
                 }
                 .card-date{
                     font-size: 14px;
@@ -1597,7 +1597,7 @@ footer{
                     bottom: 10px;
                 }
             }
-            .achiev-card:hover{
+            .achievement-card:hover{
                 background-color: var(--primary-color);
                 -webkit-border: none;
                 -moz-border: none;
@@ -1605,8 +1605,11 @@ footer{
                 -o-border: none;
                 border: none;
                 box-shadow: 5px 5px 5px var(--secondary-color);
-                .achiev-card_link{
-                    color: white;
+                color: white;
+                .card-title{
+                    .card-title_link{
+                        color: white;
+                    }
                 }
                 .card-link{
                     background-color: white;

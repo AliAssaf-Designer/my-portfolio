@@ -1702,7 +1702,7 @@ footer{
                         }
                     }
                     .experience-job_icon{
-                        margin-top: -170px;
+                        margin-top: -160px;
                         margin-left: -150px;
                         transform: rotate(-25deg);
                     }
@@ -1746,8 +1746,8 @@ footer{
                             font-size: 14px;
                         }
                         .training-info_language-img{
-                            width: 75px;
-                            height: 75px;
+                            width: 70px;
+                            height: 70px;
                             object-fit: contain;
                         }
                     }

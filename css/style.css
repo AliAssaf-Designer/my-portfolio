@@ -899,7 +899,7 @@ footer{
                 display: grid;
                 align-content: space-around;
                 margin-left: 30px;
-                .name, .email{
+                .input{
                     width: 75%;
                     height: 6vh;
                     padding: 10px;
@@ -926,7 +926,7 @@ footer{
                     border-radius: 10px;
                     font-size: 16px;
                 }
-                .name:focus, .email:focus, .message:focus{
+                .input:focus, .message:focus{
                     outline: none;
                     box-shadow: 0 5px 5px var(--secondary-color);
                 }
@@ -1037,7 +1037,7 @@ footer{
             display: block !important;
             .form{
                 width: 100% !important;
-                .name, .email{
+                .input{
                     width: 90% !important;
                     margin-bottom: 15%;
                 }
@@ -1095,7 +1095,7 @@ footer{
         }
         .form-content{
             .form{
-                .name, .email{
+                .input{
                     margin-bottom: 10%;
                 }
                 .message{

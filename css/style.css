@@ -855,7 +855,7 @@ footer{
             }
         }
     }
-    hr{
+    .separator{
         width: 95%;
         margin: 5px auto;
         height: 3px;

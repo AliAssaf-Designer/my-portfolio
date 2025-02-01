@@ -1033,7 +1033,7 @@ footer{
         }
     }
     .contact-form{
-        height: 75vh !important;
+        height: 70vh !important;
         .form-title{
             width: 50% !important;
         }
@@ -1041,7 +1041,7 @@ footer{
             display: block !important;
             .form{
                 width: 100% !important;
-                margin-left: 0px !important;
+                margin-left: 15px !important;
                 .input{
                     width: 90% !important;
                     margin-bottom: 25px;

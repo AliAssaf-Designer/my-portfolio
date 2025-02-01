@@ -14,7 +14,7 @@ html, *{
     font-family: 'Arial Rounded MT', Arial, sans-serif;
 }
 a{
-    color: rgb(35, 35, 126);
+    color: var(--secondary-color);
     -webkit-text-decoration: none;
     -moz-text-decoration: none;
     -ms-text-decoration: none;
@@ -635,6 +635,9 @@ footer{
         .type-title{
             margin: 10px;
             font-size: 27px;
+            .type-title_link{
+                color: black;
+            }
         }
         .type-courses{
         width: 100%;
@@ -1596,13 +1599,15 @@ footer{
             }
             .achiev-card:hover{
                 background-color: var(--primary-color);
-                color: white;
                 -webkit-border: none;
                 -moz-border: none;
                 -ms-border: none;
                 -o-border: none;
                 border: none;
                 box-shadow: 5px 5px 5px var(--secondary-color);
+                .achiev-card_link{
+                    color: white;
+                }
                 .card-link{
                     background-color: white;
                     color: var(--primary-color);

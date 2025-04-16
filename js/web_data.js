@@ -342,6 +342,14 @@ const web_data = [
         languages: "React",
         description: "Simple cards including some information creating using react",
         image: "https://up6.cc/2024/12/173425475174141.png"
+    },
+    {
+        id: "44",
+        link: "https://aliassaf-designer.github.io/image-color-palettes-extractor/",
+        name: "Image Color Palettes Extractor",
+        languages: "HTML,CSS,JavaScript",
+        description: "Extract colors form an image and build palettes depending on the type and colors count that you want with displaing info about each color and full info part, there is a ready palette generated automatically and you can also choose the type and count. Finally you can download the palette and show it's code.",
+        image: "https://up6.cc/2025/04/174479467550981.png"
     }
 ];
 

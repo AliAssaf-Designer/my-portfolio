@@ -316,7 +316,7 @@ const web_data = [
         link: "https://aliassaf-designer.github.io/my-cv-using-react/",
         name: "My CV",
         languages: "React",
-        description: "My last CV designed by React.",
+        description: "My old version CV designed by React.",
         image: "https://up6.cc/2024/06/171966404136341.png"
     },
     {
@@ -347,43 +347,78 @@ const web_data = [
         id: "44",
         link: "https://aliassaf-designer.github.io/image-color-palettes-extractor/",
         name: "Image Color Palettes Extractor",
-        languages: "HTML,CSS,JavaScript",
-        description: "Extract colors form an image and build palettes depending on the type and colors count that you want with displaing info about each color and full info part, there is a ready palette generated automatically and you can also choose the type and count. Finally you can download the palette and show it's code.",
+        languages: "Full Project,HTML,CSS,JavaScript",
+        description: "Extract colors form images and build palettes depending on type and colors count that you want with displaying info about each color and full info part, there is a ready palette generated automatically and you can also choose the type and count. you can search for a color using a specific value to showing other values and display a palette depends on previous choices. Finally, you can download any palette and show it's code.",
         image: "https://up6.cc/2025/04/174479467550981.png"
     }
 ];
-
+// Constants
+let web_full_project = document.querySelector(".web-projects");
 let site_cards = document.querySelector(".site-cards");
 let type_list_item = document.querySelectorAll(".type-list-item");
-
+const show_more_btn = document.querySelector(".show-more-btn");
+// Full Project
 for (let i = 0; i < web_data.length; i++) {
-    let language_value = (web_data[i].languages).split(",");
-    site_cards.innerHTML  += `
+    if (web_data[i].languages.includes("Full Project")) {
+        create_card(web_full_project, web_data[i])
+    }
+}
+// All Sites And Pages
+function create_cards(array, index, items){
+    for (let i = 0; i < index; i++) {
+        create_card(site_cards, array[i]);
+    }
+    let currentIndex = index;
+    const itemsPerClick = items;
+    function show_more_items(data){
+        const itemsToShow = data.slice(currentIndex, currentIndex + itemsPerClick);
+        itemsToShow.forEach(item =>{
+            create_card(site_cards, item);
+        });
+        currentIndex += itemsPerClick;
+        if (currentIndex >= data.length) {
+            show_more_btn.style.display = "none";
+        }
+    }
+    show_more_btn.addEventListener("click", ()=>show_more_items(array));
+}
+function create_card(container, element){
+    let language_value = (element.languages).split(",");
+    container.innerHTML  += `
     <div class="site-card" value="${language_value}">
-        <a href="${web_data[i].link}" target="_blank">
-            <img src="${web_data[i].image}" alt="site image" class="site-image">
+        <a href="${element.link}" target="_blank">
+            <img src="${element.image}" alt="site image" class="site-image">
         </a>
         <div class="site-info">
-            <h2>${web_data[i].name}</h2>
-            <h4>${web_data[i].languages}</h4>
-            <p>${web_data[i].description}</p>
+            <h2>${element.name}</h2>
+            <h4>${element.languages}</h4>
+            <p>${element.description}</p>
         </div>
     </div>
     `;
 }
+window.onload = create_cards(web_data, 6, 3);
+// Type List Filter
 for (let i = 0; i < type_list_item.length; i++) {
     type_list_item[i].addEventListener("click", ()=>{
-        for (let j = 0; j < site_cards.children.length; j++) {
-            site_cards.children[j].style.display = "block";
-            if(type_list_item[i].innerHTML == "ALL"){
-                site_cards.children[j].style.display = "block";
-            }
-            else if(!site_cards.children[j].children[1].children[1].innerHTML.includes(type_list_item[i].innerHTML)){
-                site_cards.children[j].style.display = "none";
-            }
-            else{
-                site_cards.children[j].style.display = "block"
+        let listed_web_data = [];
+        site_cards.innerHTML = "";
+        if(type_list_item[i].innerHTML == "ALL"){
+            show_more_btn.style.display = "block";
+            for (let i = 0; i < 6; i++) {
+                create_card(site_cards, web_data[i]);
             }
         }
-    })
+        for (let j = 0; j < web_data.length; j++) {
+            if(web_data[j].languages.includes(type_list_item[i].innerHTML)){
+                site_cards.innerHTML = "";
+                show_more_btn.style.display = "none";
+                listed_web_data.push(web_data[j]);
+                for (let i = 0; i < listed_web_data.length; i++) {
+                    create_card(site_cards, listed_web_data[i]);
+                }
+                show_more_btn.addEventListener("click", ()=>show_more_items(listed_web_data));
+            }
+        }
+    });
 }

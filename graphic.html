@@ -21,6 +21,8 @@
 
     <title>Graphic Portfolio</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css" rel="stylesheet">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
@@ -35,6 +37,9 @@
     <header class="header" id="header">
         <nav class="navbar" id="navbar">
             <h1 class="navbar-title">ALI ASSAF</h1>
+            <a href="javascript:void(0);" class="icon" onclick="mobile_menu()">
+                <i class="ri-menu-line"></i>
+            </a>
             <ul class="navbar-menu">
                 <li class="navbar-menu_item">
                     <a href="./index.html" class="navbar-menu_item-link">Home</a>
@@ -55,25 +60,24 @@
         </nav>
     </header>
     <main class="graphic-main">
-       <div class="type-menu">
-        <ul class="type-list">
-            <li class="type-list-item">ALL</li>
-            <li class="type-list-item">Islamic</li>
-            <li class="type-list-item">Poster</li>
-            <li class="type-list-item">CV</li>
-            <li class="type-list-item">Flyer</li>
-            <li class="type-list-item">Card</li>
-            <li class="type-list-item">Newspaper</li>
-            <li class="type-list-item">Prucher</li>
-            <li class="type-list-item">Printing</li>
-            <li class="type-list-item">Logo</li>
-            <li class="type-list-item">Redesign</li>
-            <li class="type-list-item">Text</li>
-        </ul>
-       </div>
-       <div class="graphic-cards">
-
-       </div>
+        <div class="type-menu">
+            <ul class="type-list">
+                <li class="type-list-item">ALL</li>
+                <li class="type-list-item">Islamic</li>
+                <li class="type-list-item">Poster</li>
+                <li class="type-list-item">CV</li>
+                <li class="type-list-item">Flyer</li>
+                <li class="type-list-item">Card</li>
+                <li class="type-list-item">Newspaper</li>
+                <li class="type-list-item">Prucher</li>
+                <li class="type-list-item">Printing</li>
+                <li class="type-list-item">Logo</li>
+                <li class="type-list-item">Redesign</li>
+                <li class="type-list-item">Text</li>
+            </ul>
+        </div>
+        <div class="graphic-cards"></div>
+        <button class="show-more-btn"><i class="ri-arrow-right-double-line"></i></button>
     </main>
     <footer>
         <p>This Is My Special Portfolio</p>
@@ -81,5 +85,6 @@
         <a href="#">&uarr;</a>
     </footer>
     <script src="./js/graphic_data.js"></script>
+    <script src="./js/global_script.js"></script>
 </body>
 </html>

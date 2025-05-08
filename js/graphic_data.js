@@ -451,37 +451,63 @@ const graphic_data = [
 
 let graphic_cards = document.querySelector(".graphic-cards");
 let type_list_item = document.querySelectorAll(".type-list-item");
+const show_more_btn = document.querySelector(".show-more-btn");
 
-for (let i = 0; i < graphic_data.length; i++) {
-    graphic_cards.innerHTML += 
-    `
+function create_cards(array, index, items){
+    for (let i = 0; i < index; i++) {
+        create_card(graphic_cards, array[i]);
+    }
+    let currentIndex = index;
+    const itemsPerClick = items;
+    function show_more_items(data){
+        const itemsToShow = data.slice(currentIndex, currentIndex + itemsPerClick);
+        itemsToShow.forEach(item =>{
+            create_card(graphic_cards, item);
+        });
+        currentIndex += itemsPerClick;
+        if (currentIndex >= data.length) {
+            show_more_btn.style.display = "none";
+        }
+    }
+    show_more_btn.addEventListener("click", ()=>show_more_items(array));
+}
+function create_card(container, element){
+    container.innerHTML  += `
     <div class="card">
-        <img src="${graphic_data[i].photo}" alt="graphic image">
+        <img src="${element.photo}" alt="graphic image">
         <div>
-            <h3>${graphic_data[i].name}</h3>
-            <h4>${graphic_data[i].type}</h4>
-            <p>${graphic_data[i].description}</p>
+            <h3>${element.name}</h3>
+            <h4>${element.type}</h4>
+            <p>${element.description}</p>
         </div>
         <div class="link">
-            <a href="${graphic_data[i].photo}" target="_blank" class="graphic-link">See Picture in Full Mode</a>
+            <a href="${element.photo}" target="_blank" class="graphic-link">See Picture in Full Mode</a>
         </div>
     </div>
-    `
+    `;
 }
+window.onload = create_cards(graphic_data, 6, 3);
 
 for (let i = 0; i < type_list_item.length; i++) {
     type_list_item[i].addEventListener("click", ()=>{
-        for (let j = 0; j < graphic_cards.children.length; j++) {
-            graphic_cards.children[j].style.display = "block";
-            if(type_list_item[i].innerHTML == "ALL"){
-                graphic_cards.children[j].style.display = "block";
-            }
-            else if(!graphic_cards.children[j].children[1].children[1].innerHTML.includes(type_list_item[i].innerHTML)){
-                graphic_cards.children[j].style.display = "none";
-            }
-            else{
-                graphic_cards.children[j].style.display = "block"
+        let listed_graphic_data = [];
+        graphic_cards.innerHTML = "";
+        if(type_list_item[i].innerHTML == "ALL"){
+            show_more_btn.style.display = "block";
+            for (let i = 0; i < 6; i++) {
+                create_card(graphic_cards, graphic_data[i]);
             }
         }
-    })
+        for (let j = 0; j < graphic_data.length; j++) {
+            if(graphic_data[j].type.includes(type_list_item[i].innerHTML)){
+                graphic_cards.innerHTML = "";
+                show_more_btn.style.display = "none";
+                listed_graphic_data.push(graphic_data[j]);
+                for (let i = 0; i < listed_graphic_data.length; i++) {
+                    create_card(graphic_cards, listed_graphic_data[i]);
+                }
+                show_more_btn.addEventListener("click", ()=>show_more_items(listed_web_data));
+            }
+        }
+    });
 }

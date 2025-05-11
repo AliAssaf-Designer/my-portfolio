@@ -1,3 +1,4 @@
+let doc = document;
 const web_data = [
     {
         id: "1",
@@ -353,49 +354,39 @@ const web_data = [
     }
 ];
 // Constants
-let web_full_project = document.querySelector(".web-projects");
-let site_cards = document.querySelector(".site-cards");
-let type_list_item = document.querySelectorAll(".type-list-item");
-const show_more_btn = document.querySelector(".show-more-btn");
+let web_full_project = doc.querySelector(".web-projects");
+let site_cards = doc.querySelector(".site-cards");
+let type_list_item = doc.querySelectorAll(".type-list-item");
+const show_more_btn = doc.querySelector(".show-more-btn");
 // Full Project
 for (let i = 0; i < web_data.length; i++) {
-    if (web_data[i].languages.includes("Full Project")) {
-        create_card(web_full_project, web_data[i])
-    }
+    if (web_data[i].languages.includes("Full Project")) create_card(web_full_project, web_data[i])
 }
 // All Sites And Pages
 function create_cards(array, index, items){
-    for (let i = 0; i < index; i++) {
-        create_card(site_cards, array[i]);
-    }
+    for (let i = 0; i < index; i++) create_card(site_cards, array[i]);
     let currentIndex = index;
     const itemsPerClick = items;
     function show_more_items(data){
         const itemsToShow = data.slice(currentIndex, currentIndex + itemsPerClick);
-        itemsToShow.forEach(item =>{
-            create_card(site_cards, item);
-        });
+        itemsToShow.forEach(item => create_card(site_cards, item));
         currentIndex += itemsPerClick;
-        if (currentIndex >= data.length) {
-            show_more_btn.style.display = "none";
-        }
+        if (currentIndex >= data.length) show_more_btn.style.display = "none";
     }
     show_more_btn.addEventListener("click", ()=>show_more_items(array));
 }
 function create_card(container, element){
     let language_value = (element.languages).split(",");
-    container.innerHTML  += `
-    <div class="site-card" value="${language_value}">
-        <a href="${element.link}" target="_blank">
-            <img src="${element.image}" alt="site image" class="site-image">
-        </a>
-        <div class="site-info">
-            <h2>${element.name}</h2>
-            <h4>${element.languages}</h4>
-            <p>${element.description}</p>
-        </div>
-    </div>
-    `;
+    container.innerHTML  += `<div class="site-card" value="${language_value}">
+                                <a href="${element.link}" target="_blank">
+                                    <img src="${element.image}" alt="site image" class="site-image">
+                                </a>
+                                <div class="site-info">
+                                    <h2>${element.name}</h2>
+                                    <h4>${element.languages}</h4>
+                                    <p>${element.description}</p>
+                                </div>
+                            </div>`;
 }
 window.onload = create_cards(web_data, 6, 3);
 // Type List Filter
@@ -405,19 +396,14 @@ for (let i = 0; i < type_list_item.length; i++) {
         site_cards.innerHTML = "";
         if(type_list_item[i].innerHTML == "ALL"){
             show_more_btn.style.display = "block";
-            for (let i = 0; i < 6; i++) {
-                create_card(site_cards, web_data[i]);
-            }
+            for (let i = 0; i < 6; i++) create_card(site_cards, web_data[i]);
         }
         for (let j = 0; j < web_data.length; j++) {
             if(web_data[j].languages.includes(type_list_item[i].innerHTML)){
                 site_cards.innerHTML = "";
                 show_more_btn.style.display = "none";
                 listed_web_data.push(web_data[j]);
-                for (let i = 0; i < listed_web_data.length; i++) {
-                    create_card(site_cards, listed_web_data[i]);
-                }
-                show_more_btn.addEventListener("click", ()=>show_more_items(listed_web_data));
+                for (let i = 0; i < listed_web_data.length; i++) create_card(site_cards, listed_web_data[i]);
             }
         }
     });

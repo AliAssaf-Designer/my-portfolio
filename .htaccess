@@ -70,3 +70,9 @@ Options -Indexes
     BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
     Header append Vary User-Agent
 </IfModule>
+
+RewriteRule ^index$ index.html [L]
+RewriteRule ^web$ web.html [L]
+RewriteRule ^graphic$ graphic.html [L]
+RewriteRule ^my-courses$ my-courses.html [L]
+RewriteRule ^contact$ contact.html [L]

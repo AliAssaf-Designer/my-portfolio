@@ -107,6 +107,8 @@ header{
             position: absolute;
             right: 5px;
             top: 20px;
+            width: 60px;
+            height: 66px;
         }
         .icon:hover {
             background-color: var(--primary-color);
@@ -154,10 +156,6 @@ header{
 @media (max-width: 992px) and (min-width: 768px){
     header{
         .navbar{
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -181,10 +179,6 @@ header{
                 font-size: 35px;
                 display: none;
                 box-shadow: 0 0 10px 3px var(--primary-color);
-                -webkit-border-radius: 10px;
-                -moz-border-radius: 10px;
-                -ms-border-radius: 10px;
-                -o-border-radius: 10px;
                 border-radius: 10px;
                 position: absolute;
                 right: 5px;
@@ -386,10 +380,6 @@ footer{
         .full-project{
             width: 100%;
             margin: 10px auto 40px;
-            -webkit-border-bottom: 2px solid var(--secondary-color);
-            -moz-border-bottom: 2px solid var(--secondary-color);
-            -ms-border-bottom: 2px solid var(--secondary-color);
-            -o-border-bottom: 2px solid var(--secondary-color);
             border-bottom: 2px solid var(--secondary-color);
             .experience-title{
                 font-size: 35px;
@@ -404,21 +394,9 @@ footer{
             .type-menu{
                 width: 100%;
                 font-size: 20px;
-                -webkit-border-bottom: 2px solid var(--secondary-color);
-                -moz-border-bottom: 2px solid var(--secondary-color);
-                -ms-border-bottom: 2px solid var(--secondary-color);
-                -o-border-bottom: 2px solid var(--secondary-color);
                 border-bottom: 2px solid var(--secondary-color);
-                -webkit-border-right: none;
-                -moz-border-right: none;
-                -ms-border-right: none;
-                -o-border-right: none;
                 border-right: none;
                 .type-list{
-                    display: -webkit-box;
-                    display: -moz-box;
-                    display: -ms-flexbox;
-                    display: -webkit-flex;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -455,10 +433,6 @@ footer{
     .web-main{
         .full-project{
             width: 100%;
-            -webkit-border-bottom: 2px solid var(--secondary-color);
-            -moz-border-bottom: 2px solid var(--secondary-color);
-            -ms-border-bottom: 2px solid var(--secondary-color);
-            -o-border-bottom: 2px solid var(--secondary-color);
             border-bottom: 2px solid var(--secondary-color);
             .web-projects{
                 padding: 2%;
@@ -497,8 +471,6 @@ footer{
             }
             .site-cards{
                 width: 100%;
-                display: -moz-grid;
-                display: -ms-grid;
                 display: grid;
                 grid-template-columns:  repeat(2,46%);
                 justify-content: space-around;
@@ -674,21 +646,9 @@ footer{
         .type-menu{
             width: 100%;
             font-size: 20px;
-            -webkit-border-bottom: 2px solid var(--secondary-color);
-            -moz-border-bottom: 2px solid var(--secondary-color);
-            -ms-border-bottom: 2px solid var(--secondary-color);
-            -o-border-bottom: 2px solid var(--secondary-color);
             border-bottom: 2px solid var(--secondary-color);
-            -webkit-border-right: none;
-            -moz-border-right: none;
-            -ms-border-right: none;
-            -o-border-right: none;
             border-right: none;
             .type-list{
-                display: -webkit-box;
-                display: -moz-box;
-                display: -ms-flexbox;
-                display: -webkit-flex;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -724,21 +684,9 @@ footer{
         .type-menu{
             width: 100%;
             font-size: 20px;
-            -webkit-border-bottom: 2px solid var(--secondary-color);
-            -moz-border-bottom: 2px solid var(--secondary-color);
-            -ms-border-bottom: 2px solid var(--secondary-color);
-            -o-border-bottom: 2px solid var(--secondary-color);
             border-bottom: 2px solid var(--secondary-color);
-            -webkit-border-right: none;
-            -moz-border-right: none;
-            -ms-border-right: none;
-            -o-border-right: none;
             border-right: none;
             .type-list{
-                display: -webkit-box;
-                display: -moz-box;
-                display: -ms-flexbox;
-                display: -webkit-flex;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
@@ -1272,10 +1220,12 @@ footer{
                 justify-content: space-around;
                 align-content: center;
                 .myImg{
+                    width: 100%;
+                    height: 90%;
                     margin: 10px;
                     .image{
                         width: 100%;
-                        height: auto;
+                        height: 100%;
                         -webkit-border-radius: 15px;
                         -moz-border-radius: 15px;
                         -ms-border-radius: 15px;
@@ -1368,10 +1318,10 @@ footer{
             }
         }
         .slide1{
-            background-image: url(https://images3.alphacoders.com/245/thumb-1920-245765.jpg);
+            background-image: url(../img/cv/slide1_img.jpg);
         }
         .slide2{
-            background-image: url(https://pixelz.cc/wp-content/uploads/2017/01/red-and-blue-triangles-patern-uhd-4k-wallpaper.jpg);
+            background-image: url(../img/cv/slide2_img.jpg);
         }
     }
     .experience{
@@ -2104,12 +2054,12 @@ footer{
             }
         }
         .achievements{
-            .achievs-title{
+            .achievements-title{
                 font-size: 30px;
             }
-            .achievs-cards{
+            .achievements-cards{
                 gap: 0px;
-                .achiev-card{
+                .achievement-card{
                     width: 45%;
                     height: 45vh;
                     padding: 15px;

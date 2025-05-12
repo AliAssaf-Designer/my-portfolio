@@ -1,4 +1,3 @@
-let doc = document;
 let basic_skills_info = [
     {skill: "Good knowledge of HTML5, CSS3 & JavaScript",progress: "80%"},
     {skill: "Good knowledge of Bootstrap, Tailwind & jQurey",progress: "70%"},
@@ -18,11 +17,11 @@ let soft_skills_info = [
     {skill: "Good problem Solving",progress: "80%"}
 ];
 
-let basic_skills_type = doc.querySelector(".basic-skills-type");
-let soft_skills_type = doc.querySelector(".soft-skills-type");
-let basic_skills_type_list = doc.querySelector(".basic-skills-type_list");
-let soft_skills_type_list = doc.querySelector(".soft-skills-type_list");
-let skill_progress = doc.querySelectorAll(".skill-progress")
+let basic_skills_type = document.querySelector(".basic-skills-type");
+let soft_skills_type = document.querySelector(".soft-skills-type");
+let basic_skills_type_list = document.querySelector(".basic-skills-type_list");
+let soft_skills_type_list = document.querySelector(".soft-skills-type_list");
+let skill_progress = document.querySelectorAll(".skill-progress")
 
 basic_skills_type_list.addEventListener("change", ()=>{
     basic_skills_info.forEach(progress => {

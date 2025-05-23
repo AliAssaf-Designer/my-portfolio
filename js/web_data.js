@@ -351,6 +351,14 @@ const web_data = [
         languages: "Full Project,HTML,CSS,JavaScript",
         description: "Extract colors form images and build palettes depending on type and colors count that you want with displaying info about each color and full info part, there is a ready palette generated automatically and you can also choose the type and count. you can search for a color using a specific value to showing other values and display a palette depends on previous choices. Finally, you can download any palette and show it's code.",
         image: "https://up6.cc/2025/04/174479467550981.png"
+    },
+    {
+        id: "45",
+        link: "https://aliassaf-designer.github.io/rock-paper-scissors/",
+        name: "Rock Paper Scissors",
+        languages: "HTML,CSS,JavaScript",
+        description: "Play rock, paper, scissors with computer and try to win!.",
+        image: "https://up6.cc/2025/05/174803610966911.png"
     }
 ];
 // Constants

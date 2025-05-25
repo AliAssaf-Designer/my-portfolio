@@ -403,11 +403,11 @@ function create_cards(array, index, items){
 }
 function create_card(container, element){
     container.innerHTML  += `<div class="card">
-                                <img src="${element.photo}" alt="graphic image">
-                                <div>
-                                    <h3>${element.name}</h3>
-                                    <h4>${element.type}</h4>
-                                    <p>${element.description}</p>
+                                <img src="${element.photo}" alt="graphic image" class="graphic-img">
+                                <div class="graphic-info">
+                                    <h3 class="graphic-name">${element.name}</h3>
+                                    <h4 class="graphic-type">${element.type}</h4>
+                                    <p class="graphic-description">${element.description}</p>
                                 </div>
                                 <div class="link">
                                     <a href="${element.photo}" target="_blank" class="graphic-link">See Picture in Full Mode</a>

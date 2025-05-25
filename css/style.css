@@ -52,7 +52,7 @@ header{
         -moz-transition: all .4s ease-in;
         -o-transition: all .4s ease-in;
         transition: all .4s ease-in;
-        .navbar-title{ font-size: 55px; padding: var(--primary-padding) 0; cursor: pointer; letter-spacing: 5px; }
+        .navbar-title{ font-size: 65px; padding: var(--primary-padding) 0; cursor: pointer; letter-spacing: 5px; }
         .navbar-title:hover{text-shadow: calc(var(--box-shadow-y-shift)*(-1)) var(--box-shadow-y-shift) var(--secondary-color);}
         .navbar-menu{
             display: -webkit-box;
@@ -107,7 +107,7 @@ header{
             height: 17vh;
             .navbar-title{
                 height: 30%;
-                font-size: 55px;
+                font-size: 48px;
                 padding: calc(var(--primary-padding)*2) 0;
                 margin-bottom: 10px;
                 margin-right: 50px;
@@ -345,7 +345,7 @@ footer{
         .site-card{
             margin-bottom: 15px;
             height: 525px;
-            .site-info{.site-title{font-size: 30px;}.site-lang{font-size: 17px;}.site-description{font-size: 14px;}}
+            .site-info{.site-title{font-size: 30px;}.site-lang{font-size: 17px;}.site-description{font-size: 13px;}}
         }
     }
 }
@@ -499,7 +499,7 @@ footer{
                 text-align: left;
                 .graphic-name{font-size: 20px;}
                 .graphic-type{font-weight: 600;}
-                .graphic-description{font-size: 15px;}
+                .graphic-description{font-size: 15px; text-align: justify;}
             }
             .link{
                 width: 94%;
@@ -515,6 +515,7 @@ footer{
                 bottom: 10px;
                 left: 10px;
                 text-align: center;
+                line-height: 4vh;
                 .graphic-link{color: white;}
             }
         }
@@ -621,7 +622,7 @@ footer{
             .name{font-size: 21px;margin-bottom: 10px;height: 10vh;}
             .date{ font-style: italic; text-align: end; margin-bottom: 15px;}
             .video{width: 100%;margin-bottom: 30px;}
-            .description{font-size: 17px;font-weight: 600;margin-bottom: 40px;}
+            .description{font-size: 17px;font-weight: 600;margin-bottom: 40px; text-align: justify;}
             .lecture{
                 text-align: end;
                 font-style: italic;
@@ -917,6 +918,7 @@ footer{
                 width: 90%;
                 margin-bottom: 15px;
                 justify-content: flex-start;
+                .contact-item_img{margin-right: 5px;}
                 .contact-item_link{ font-weight: 900; font-size: 16px;}
             }
         }
@@ -1008,7 +1010,6 @@ footer{
                 .myImg{
                     width: 100%;
                     height: 90%;
-                    margin: 10px;
                     .image{
                         width: 100%;
                         height: 100%;
@@ -1022,7 +1023,7 @@ footer{
                 }
                 .intro{
                     margin: auto 0;
-                    .intro-description{ font-size: 32px; font-weight: 500; margin-right: 110px;}
+                    .intro-description{ font-size: 32px; font-weight: 500; margin-right: 110px; text-align: justify;}
                 }
             }
             .graduate{
@@ -1044,6 +1045,7 @@ footer{
                     -o-border-radius: 15px;
                     border-radius: 15px;
                     padding: 20px 10px;
+                    text-align: justify;
                 }
                 .graduate-info:hover{ box-shadow: 0 0 10px var(--primary-color); font-weight: 600;}
                 .university{
@@ -1055,6 +1057,7 @@ footer{
                         font-weight: bold;
                         word-spacing: 5px;
                         line-height: 35px;
+                        text-align: justify;
                     }
                     .graduate-place{
                         font-size: 18px;
@@ -1371,7 +1374,7 @@ footer{
                     .card-title_link{color: var(--secondary-color);}
                 }
                 .card-date{ font-size: 14px; margin-left: 40px; font-style: italic; margin-bottom: 10px; }
-                .card-description{margin-bottom: 10px;}
+                .card-description{margin-bottom: 10px; text-align: justify; }
                 .card-link{
                     text-align: center;
                     margin: 0 130px;
@@ -1639,6 +1642,6 @@ footer{
 }
 .show-more-btn:active{transform: translateY(5px);}
 @media (max-width: 768px) {
-    .show-more-btn{ width: 16%; height: 14vh; margin: 10px 175px;}
-    .show-more-btn:hover{ width: 18%; height: 16vh; margin: 10px 190px;}
+    .show-more-btn{ width: 16%; height: 12vh; margin: 10px 175px;}
+    .show-more-btn:hover{ width: 18%; height: 14vh; margin: 10px 190px;}
 }

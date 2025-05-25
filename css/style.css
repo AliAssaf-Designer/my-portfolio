@@ -52,12 +52,7 @@ header{
         -moz-transition: all .4s ease-in;
         -o-transition: all .4s ease-in;
         transition: all .4s ease-in;
-        .navbar-title{
-            font-size: 55px;
-            padding: var(--primary-padding) 0;
-            cursor: pointer;
-            letter-spacing: 5px;
-        }
+        .navbar-title{ font-size: 55px; padding: var(--primary-padding) 0; cursor: pointer; letter-spacing: 5px; }
         .navbar-title:hover{text-shadow: calc(var(--box-shadow-y-shift)*(-1)) var(--box-shadow-y-shift) var(--secondary-color);}
         .navbar-menu{
             display: -webkit-box;
@@ -112,7 +107,7 @@ header{
             height: 17vh;
             .navbar-title{
                 height: 30%;
-                font-size: 65px;
+                font-size: 55px;
                 padding: calc(var(--primary-padding)*2) 0;
                 margin-bottom: 10px;
                 margin-right: 50px;
@@ -303,7 +298,7 @@ footer{
         text-align: left;
         box-shadow: -5px 5px 10px var(--primary-color),5px -5px 10px var(--secondary-color);
         position: relative;
-        & img{
+        .site-image{
             margin-bottom: 10px;
             width: 100%;
             height: 55%;
@@ -314,14 +309,9 @@ footer{
             border-radius: 10px;
         }
         .site-info{
-            h2{font-size: 27px;font-weight: bolder;}
-            h4{ font-size: 15px; font-weight: 700;}
-            p{
-                font-size: 12px;
-                font-weight: 500;
-                text-align: justify;
-                margin-top: 6px;
-            }
+            .site-title{font-size: 27px;font-weight: bolder;}
+            .site-lang{ font-size: 15px; font-weight: 700;}
+            .site-description{ font-size: 12px; font-weight: 500; text-align: justify; margin-top: 6px; }
         }
     }
 }
@@ -355,7 +345,7 @@ footer{
         .site-card{
             margin-bottom: 15px;
             height: 525px;
-            .site-info{h2{font-size: 30px;}h4{font-size: 17px;}p{font-size: 15px;}}
+            .site-info{.site-title{font-size: 30px;}.site-lang{font-size: 17px;}.site-description{font-size: 14px;}}
         }
     }
 }
@@ -404,7 +394,7 @@ footer{
         }
         .site-card{
             height: 75vh;
-            .site-info{ h2{font-size: 27px;} h4{font-size: 16px;} p{font-size: 14px;}}
+            .site-info{ .site-title{font-size: 27px;} .site-lang{font-size: 16px;} .site-description{font-size: 14px;}}
         }
     }
 }
@@ -505,15 +495,15 @@ footer{
                 border-radius: 8px;
             }
             .graphic-info{
-                margin-left: 10px;
+                margin: 10px;
                 text-align: left;
-                margin-bottom: 10px;
                 .graphic-name{font-size: 20px;}
                 .graphic-type{font-weight: 600;}
                 .graphic-description{font-size: 15px;}
             }
             .link{
                 width: 94%;
+                height: 5vh;
                 padding: 5px 25px;
                 -webkit-border-radius: 8px;
                 -moz-border-radius: 8px;
@@ -522,8 +512,8 @@ footer{
                 border-radius: 8px;
                 background-image: linear-gradient(161deg,var(--secondary-color) 25%,var(--primary-color) 80%);
                 position: absolute;
-                bottom: 5px;
-                left: 0px;
+                bottom: 10px;
+                left: 10px;
                 text-align: center;
                 .graphic-link{color: white;}
             }
@@ -992,10 +982,7 @@ footer{
     .contact-form{
         .form-title{width: 25% !important;}
         .form-content{
-            .form{
-                .input{margin-bottom: 10%;}
-                .message{margin-bottom: 5%;}
-            }
+            .form{ .input{margin-bottom: 10%;} .message{margin-bottom: 5%;} }
             .form-img{height: 100%;}
         }
     }
@@ -1138,12 +1125,7 @@ footer{
                     list-style-type:  disclosure-closed;
                     .experience-job_skill{ margin-bottom: 15px; font-size: 14px;}
                 }
-                .experience-job_icon{
-                    width: 850px;
-                    margin-top: -190px;
-                    margin-left: 40px;
-                    transform: rotate(-35deg);
-                }
+                .experience-job_icon{ width: 850px; margin-top: -190px; margin-left: 40px; transform: rotate(-35deg); }
             }
             .experience-job_card:hover{
                 background-color: var(--primary-color);
@@ -1252,25 +1234,13 @@ footer{
                     -o-text-decoration: underline;
                     text-decoration: underline;
                     .training-info_language-title{margin-bottom: 10px;}
-                    .training-info_language-img{
-                        width: 40px;
-                        height: 40px;
-                        object-fit: cover;
-                    }
+                    .training-info_language-img{ width: 40px; height: 40px; object-fit: cover; }
                 }
             }
         }
         .training-info:hover{ background-color: var(--secondary-color); color: white;}
-        .training-link{
-            font-size: 19px;
-            margin-bottom: 20px;
-            .training-link_link{font-weight: bold;}
-        }
-        .training-date{
-            font-style: italic;
-            font-size: 18px;
-            margin-left: 280px;
-        }
+        .training-link{ font-size: 19px; margin-bottom: 20px; .training-link_link{font-weight: bold;} }
+        .training-date{ font-style: italic; font-size: 18px; margin-left: 280px; }
     }
     .skills{
         .skills-title{ font-size: 32px; margin: 15px;}
@@ -1400,12 +1370,7 @@ footer{
                     border-radius: 15px;
                     .card-title_link{color: var(--secondary-color);}
                 }
-                .card-date{
-                    font-size: 14px;
-                    margin-left: 40px;
-                    font-style: italic;
-                    margin-bottom: 10px;
-                }
+                .card-date{ font-size: 14px; margin-left: 40px; font-style: italic; margin-bottom: 10px; }
                 .card-description{margin-bottom: 10px;}
                 .card-link{
                     text-align: center;
@@ -1494,12 +1459,7 @@ footer{
                         margin-top: 100px;
                         margin-left: 20px;
                         .graduate-place{text-align: center;}
-                        .graduate-link{
-                            display: grid;
-                            justify-content: start;
-                            gap: 20px;
-                            .certificate-link{text-align: center;}
-                        }
+                        .graduate-link{ display: grid; justify-content: start; gap: 20px; .certificate-link{text-align: center;} }
                     }
                 }
             }
@@ -1512,11 +1472,7 @@ footer{
                     width: calc(100% - 40px);
                     margin: 30px 20px;
                     .experience-job_skills{.experience-job_skill{ margin-bottom: 20px; font-size: 13px;}}
-                    .experience-job_icon{
-                        margin-top: -160px;
-                        margin-left: -150px;
-                        transform: rotate(-25deg);
-                    }
+                    .experience-job_icon{ margin-top: -160px; margin-left: -150px; transform: rotate(-25deg); }
                 }
                 .experience-job_card:hover{.experience-job_skills{.experience-job_skill{font-size: 14px;}}}
             }
@@ -1538,11 +1494,7 @@ footer{
                     .training-info_language{
                         margin: 24px;
                         .training-info_language-title{ margin-bottom: 5px; font-size: 14px;}
-                        .training-info_language-img{
-                            width: 70px;
-                            height: 70px;
-                            object-fit: contain;
-                        }
+                        .training-info_language-img{ width: 70px; height: 70px; object-fit: contain; }
                     }
                 }
             }
@@ -1553,11 +1505,7 @@ footer{
                 width: calc(100% - 40px);
                 display: block;
                 margin: 15px;
-                .skills-type{
-                    margin: 0 auto;
-                    width: calc(100% - 20px);
-                    margin-bottom: 40px;
-                }
+                .skills-type{ margin: 0 auto; width: calc(100% - 20px); margin-bottom: 40px; }
             }
         }
         .achievements{
@@ -1577,10 +1525,7 @@ footer{
             width: 90%;
             display: block;
             .languages-title{ width: 100%; margin-bottom: 20px;}
-            .languages-list{
-                width: 100%;
-                .languages-list-item{font-size: 18px;}
-            }
+            .languages-list{ width: 100%; .languages-list-item{font-size: 18px;} }
         }
     }
 }
@@ -1591,10 +1536,7 @@ footer{
                 height: 60vh;
                 .introduction{
                     grid-template-columns: 70% 30%;
-                    .intro{
-                        margin: auto 0;
-                        .intro-description{ font-size: 26px; margin-right: 0px;}
-                    }
+                    .intro{ margin: auto 0; .intro-description{ font-size: 26px; margin-right: 0px;} }
                 }
                 .graduate{
                     grid-template-columns: 50% 50%;
@@ -1603,17 +1545,8 @@ footer{
                     .university{
                         margin-top: 80px;
                         .graduate-title{ font-size: 21px; word-spacing: 3px;}
-                        .graduate-place{
-                            font-size: 17px;
-                            font-weight: 500;
-                            text-align: center;
-                            margin-left: 110px;
-                        }
-                        .graduate-link{
-                            font-size: 20px;
-                            margin: 20px;
-                            .certificate-link{font-size: 20px;}
-                        }
+                        .graduate-place{ font-size: 17px; font-weight: 500; text-align: center; margin-left: 110px; }
+                        .graduate-link{ font-size: 20px; margin: 20px; .certificate-link{font-size: 20px;} }
                     }
                 }
             }
@@ -1625,11 +1558,7 @@ footer{
                     width: 47%;
                     .experience-job_title{font-size: 23px;}
                     .experience-job_skills{.experience-job_skill{font-size: 13px;}}
-                    .experience-job_icon{
-                        width: 600px;
-                        margin-top: -140px;
-                        margin-left: 30px;
-                    }
+                    .experience-job_icon{ width: 600px; margin-top: -140px; margin-left: 30px; }
                 }
                 .experience-job_card:hover{.experience-job_skills{.experience-job_skill{font-size: 14px;}}}
             }
@@ -1638,46 +1567,24 @@ footer{
             width: 75%;
             .training-title{
                 margin: 25px auto;
-                .training-title_img{
-                    width: 100px;
-                    height: 100px;
-                }
-                .training-title_name{
-                    font-size: 30px;
-                    margin-left: -100px;
-                }
+                .training-title_img{ width: 100px; height: 100px; }
+                .training-title_name{ font-size: 30px; margin-left: -100px; }
             }
-            .training-company{
-                width: 75%;
-                .training-company_img{margin-left: 40px;}
-            }
+            .training-company{ width: 75%; .training-company_img{margin-left: 40px;} }
             .training-info{
                 margin: 20px 0;
                 padding: 20px;
-                .training-info_title{
-                    margin: 10px 0;
-                    font-size: 13px;
-                    word-spacing: 0px;
-                }
+                .training-info_title{ margin: 10px 0; font-size: 13px; word-spacing: 0px; }
                 .training-info_languages{
                     margin-bottom: 10px;
                     .training-info_language{
                         .training-info_language-title{margin-bottom: 10px;}
-                        .training-info_language-img{
-                            width: 50px;
-                            height: 50px;
-                        }
+                        .training-info_language-img{ width: 50px; height: 50px; }
                     }
                 }
             }
-            .training-link{
-                font-size: 18px;
-                margin-bottom: 15px;
-            }
-            .training-date{
-                font-size: 17px;
-                margin-left: 240px;
-            }
+            .training-link{ font-size: 18px; margin-bottom: 15px; }
+            .training-date{ font-size: 17px; margin-left: 240px; }
         }
         .skills{
             .skills-title{font-size: 30px;}
@@ -1686,12 +1593,7 @@ footer{
                     width: 45%;
                     .skills-type_title{margin: 15px 0;}
                     .skills-type_list{height: 7vh;}
-                    .skill-progress{
-                        .skill-progress-bar{
-                            height: 5vh;
-                            line-height: 5vh;
-                        }
-                    }
+                    .skill-progress{ .skill-progress-bar{ height: 5vh; line-height: 5vh; } }
                 }
             }
         }
@@ -1703,16 +1605,8 @@ footer{
                     width: 45%;
                     height: 45vh;
                     padding: 15px;
-                    .card-title{
-                        font-size: 19px;
-                        margin-bottom: 15px;
-                        padding: 0px;
-                    }
-                    .card-date{
-                        font-size: 13px;
-                        margin-left: 50px;
-                        margin-bottom: 15px;
-                    }
+                    .card-title{ font-size: 19px; margin-bottom: 15px; padding: 0px; }
+                    .card-date{ font-size: 13px; margin-left: 50px; margin-bottom: 15px; }
                     .card-link{margin: 0 160px;}
                 }
             }
@@ -1745,6 +1639,6 @@ footer{
 }
 .show-more-btn:active{transform: translateY(5px);}
 @media (max-width: 768px) {
-    .show-more-btn{ width: 16%; height: 14vh; margin: 10px 220px;}
-    .show-more-btn:hover{ width: 18%; height: 16vh; margin: 10px 210px;}
+    .show-more-btn{ width: 16%; height: 14vh; margin: 10px 175px;}
+    .show-more-btn:hover{ width: 18%; height: 16vh; margin: 10px 190px;}
 }

@@ -390,9 +390,9 @@ function create_card(container, element){
                                     <img src="${element.image}" alt="site image" class="site-image">
                                 </a>
                                 <div class="site-info">
-                                    <h2>${element.name}</h2>
-                                    <h4>${element.languages}</h4>
-                                    <p>${element.description}</p>
+                                    <h2 class="site-title">${element.name}</h2>
+                                    <h4 class="site-lang">${element.languages}</h4>
+                                    <p class="site-description">${element.description}</p>
                                 </div>
                             </div>`;
 }

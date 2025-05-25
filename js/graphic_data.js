@@ -1,4 +1,3 @@
-let doc = document;
 const graphic_data = [
     {   id: "1",
         photo: "https://up6.cc/2024/07/172000376270421.jpg",
@@ -386,9 +385,9 @@ const graphic_data = [
     }
 ];
 
-let graphic_cards = doc.querySelector(".graphic-cards");
-let type_list_item = doc.querySelectorAll(".type-list-item");
-const show_more_btn = doc.querySelector(".show-more-btn");
+let graphic_cards = document.querySelector(".graphic-cards");
+let type_list_item = document.querySelectorAll(".type-list-item");
+const show_more_btn = document.querySelector(".show-more-btn");
 
 function create_cards(array, index, items){
     for (let i = 0; i < index; i++) create_card(graphic_cards, array[i]);

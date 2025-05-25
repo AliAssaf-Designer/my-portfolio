@@ -1045,7 +1045,6 @@ footer{
                     -o-border-radius: 15px;
                     border-radius: 15px;
                     padding: 20px 10px;
-                    text-align: justify;
                 }
                 .graduate-info:hover{ box-shadow: 0 0 10px var(--primary-color); font-weight: 600;}
                 .university{
@@ -1057,7 +1056,6 @@ footer{
                         font-weight: bold;
                         word-spacing: 5px;
                         line-height: 35px;
-                        text-align: justify;
                     }
                     .graduate-place{
                         font-size: 18px;
@@ -1642,6 +1640,6 @@ footer{
 }
 .show-more-btn:active{transform: translateY(5px);}
 @media (max-width: 768px) {
-    .show-more-btn{ width: 16%; height: 12vh; margin: 10px 175px;}
-    .show-more-btn:hover{ width: 18%; height: 14vh; margin: 10px 190px;}
+    .show-more-btn{ width: 16%; height: 10vh; margin: 10px 175px;}
+    .show-more-btn:hover{ width: 18%; height: 12vh; margin: 10px 190px;}
 }

@@ -76,3 +76,10 @@ RewriteRule ^web$ web.html [L]
 RewriteRule ^graphic$ graphic.html [L]
 RewriteRule ^my-courses$ my-courses.html [L]
 RewriteRule ^contact$ contact.html [L]
+
+# BEGIN HTTPS Redirect
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://aliassaf.free.nf/?i=1 [L,R=301]
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
+# END HTTPS Redirect

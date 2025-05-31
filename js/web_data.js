@@ -359,7 +359,15 @@ const web_data = [
         languages: "HTML,CSS,JavaScript",
         description: "Play rock, paper, scissors with computer and try to win!.",
         image: "https://up6.cc/2025/05/174803610966911.png"
-    }
+    },
+    {
+        id: "46",
+        link: "https://aliassaf.free.nf/anime/",
+        name: "Anime Watch",
+        languages: "HTML,CSS,JavaScript,Bootstrap,jQuery,API",
+        description: "Do you know that according to Google, the monthly search volume for anime related topics is up to over 1 billion times? Anime is famous worldwide and it is now wonder we've seen a sharp rise in the number of free anime streaming sites.",
+        image: "https://up6.cc/2025/05/174867828782061.png"
+    },
 ];
 // Constants
 let web_full_project = doc.querySelector(".web-projects");

@@ -1,52 +1,35 @@
 let basic_skills_info = [
-    {skill: "Good knowledge of HTML5, CSS3 & JavaScript",progress: "80%"},
-    {skill: "Good knowledge of Bootstrap, Tailwind & jQurey",progress: "70%"},
-    {skill: "Familiarity of SASS preprocessor",progress: "65%"},
-    {skill: "Knowledge of React framework",progress: "80%"},
-    {skill: "Knowledge of responsive design principles",progress: "70%"},
-    {skill: "Understanding of code versioning tool (Git)",progress: "60%"},
-    {skill: "Knowledge of API and using it",progress: "75%"},
-    {skill: "Good knowledge of Photoshop, Illustrator & Indesign",progress: "80%"},
-    {skill: "Good knowledge of Word, Excel & Powerpoint",progress: "90%"}
+    {id: "1", skill: "Good knowledge of HTML5, CSS3 & JavaScript",icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJfTzkfiPm9hZUu-J9VyVAVg2z5f4vi3QP_g&s"},
+    {id: "2", skill: "Good knowledge of Bootstrap, Tailwind & jQurey",icon: "https://assets.viget.com/blog/bootstrap-vs-tailwind.png"},
+    {id: "3", skill: "Familiarity of SASS preprocessor",icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png"},
+    {id: "4", skill: "Knowledge of React framework",icon: "https://onextrapixel.com/wp-content/uploads/2016/04/reactjs-thumb.jpg"},
+    {id: "5", skill: "Knowledge of responsive design principles",icon: "https://www.andacademy.com/resources/wp-content/uploads/2025/05/inner_2e.webp"},
+    {id: "6", skill: "Understanding of code versioning tool (Git)",icon: "https://www.javacodegeeks.com/wp-content/uploads/2023/03/git.png"},
+    {id: "7", skill: "Knowledge of API and using it",icon: "https://img.freepik.com/premium-vector/api-icon-vector-image-can-be-used-computer-science_120816-217765.jpg"},
+    {id: "8", skill: "Good knowledge of Photoshop, Illustrator & Indesign",icon: "https://kbcovers.com/wp-content/uploads/2021/06/PS-AI-ID-Logo.png"},
+    {id: "9", skill: "Good knowledge of Word, Excel & Powerpoint",icon: "https://img.freepik.com/premium-vector/vactor-set-microsoft-word-excel-power-point-icon_1101854-1138.jpg"}
 ];
 let soft_skills_info = [
-    {skill: "Good working with team collaboratively", progress: "75%"},
-    {skill: "Good communication and collaboration skills",progress: "80%"},
-    {skill: "Work under pressure",progress: "75%"},
-    {skill: "Project Management",progress: "70%"},
-    {skill: "Good problem Solving",progress: "80%"}
+    {id: "1", skill: "Good working with team collaboratively", icon: "https://thumbs.dreamstime.com/b/teamwork-concept-logo-team-work-icon-white-background-eps-teamwork-concept-logo-team-work-icon-white-156664631.jpg"},
+    {id: "2", skill: "Good communication and collaboration skills",icon: "https://www.shutterstock.com/image-vector/effective-communication-icon-3d-illustration-260nw-2207915083.jpg"},
+    {id: "3", skill: "Work under pressure",icon: "https://www.shutterstock.com/image-vector/stress-work-man-icon-vector-260nw-1620380443.jpg"},
+    {id: "4", skill: "Project Management",icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Ot1zFx25AM8IfPz4J_WjBXs1jylgfCh73Q&s"},
+    {id: "5", skill: "Good problem Solving",icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX0n8GySzgzBXjVTPyjfrhHZib9SHcexcfQQ&s"}
 ];
 
-let basic_skills_type = document.querySelector(".basic-skills-type");
-let soft_skills_type = document.querySelector(".soft-skills-type");
-let basic_skills_type_list = document.querySelector(".basic-skills-type_list");
-let soft_skills_type_list = document.querySelector(".soft-skills-type_list");
-let skill_progress = document.querySelectorAll(".skill-progress")
+let basic_skills_cards = document.querySelector(".basic-skills-cards");
+let soft_skills_cards = document.querySelector(".soft-skills-cards");
 
-basic_skills_type_list.addEventListener("change", ()=>{
-    basic_skills_info.forEach(progress => {
-        if (basic_skills_type_list.value == progress.skill) {
-            skill_progress[0].innerHTML = "";
-            skill_progress[0].innerHTML += `
-            <h5 class="skill-progress_title">${basic_skills_type_list.value}</h5>
-            <div class="skill-progress-bar">
-                <div class="skill-progress-bar_value" style="width: ${progress.progress}">${progress.progress}</div>
-            </div>
-            `;
-        };
+function skills(skills_info, container){
+    skills_info.map(basic_skill =>{
+        container.innerHTML += `<div class="skill-card">
+                                    <div class="card-bg"><h5 class="skill-id">${basic_skill.id}</h5></div>
+                                    <div class="card-info">
+                                        <img src="${basic_skill.icon}" class="skill-img" >
+                                        <h4 class="skill-title">${basic_skill.skill}</h4>
+                                    </div>
+                                </div>`;
     });
-});
-
-soft_skills_type_list.addEventListener("change", ()=>{
-    soft_skills_info.forEach(progress =>{
-        if (soft_skills_type_list.value == progress.skill) {
-            skill_progress[1].innerHTML = "";
-            skill_progress[1].innerHTML += `
-                <h5 class="skill-progress_title">${soft_skills_type_list.value}</h5>
-                <div class="skill-progress-bar">
-                    <div class="skill-progress-bar_value" style="width: ${progress.progress};">${progress.progress}</div>
-                </div>
-            `;
-        };
-    });
-});
+}
+skills(basic_skills_info, basic_skills_cards);
+skills(soft_skills_info, soft_skills_cards);

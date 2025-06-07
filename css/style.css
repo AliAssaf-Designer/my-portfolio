@@ -5,6 +5,10 @@
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
 }
 html, *{
     -webkit-scroll-behavior: smooth;
@@ -48,10 +52,6 @@ header{
         align-items: center;
         color: white;
         box-shadow: var(--box-shadow-x-shift) var(--box-shadow-y-shift) var(--box-shadow-blur) var(--box-shadow-color);
-        -webkit-transition: all .4s ease-in;
-        -moz-transition: all .4s ease-in;
-        -o-transition: all .4s ease-in;
-        transition: all .4s ease-in;
         .navbar-title{ font-size: 65px; padding: var(--primary-padding) 0; cursor: pointer; letter-spacing: 5px; }
         .navbar-title:hover{text-shadow: calc(var(--box-shadow-y-shift)*(-1)) var(--box-shadow-y-shift) var(--secondary-color);}
         .navbar-menu{
@@ -200,7 +200,7 @@ footer{
         -ms-border-radius: 15px;
         -o-border-radius: 15px;
         border-radius: 15px;
-        .experience-title{font-size: 40px;}
+        .experience-title{font-size: 40px; text-align: start; color: var(--secondary-color);}
         .web-projects{
             padding: 2%;
             display: -moz-grid;
@@ -219,10 +219,6 @@ footer{
         display: -webkit-flex;
         display: flex;
         flex-wrap: wrap;
-        -webkit-transition: all -.4s ease-in;
-        -moz-transition: all -.4s ease-in;
-        -o-transition: all -.4s ease-in;
-        transition: all -.4s ease-in;
         font-family: "Cairo";
         .type-menu{
             width: 20%;
@@ -270,10 +266,6 @@ footer{
             }
         }
         .site-cards{
-            -webkit-transition: all -.4s ease-in;
-            -moz-transition: all -.4s ease-in;
-            -o-transition: all -.4s ease-in;
-            transition: all -.4s ease-in;
             width: 80%;
             padding: 15px;
             display: -moz-grid;
@@ -405,10 +397,6 @@ footer{
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
-    -webkit-transition: all -.4s ease-in;
-    -moz-transition: all -.4s ease-in;
-    -o-transition: all -.4s ease-in;
-    transition: all -.4s ease-in;
     font-family: "Cairo";
     .type-menu{
         width: 20%;
@@ -456,10 +444,6 @@ footer{
         }
     }
     .graphic-cards{
-        -webkit-transition: all -.4s ease-in;
-        -moz-transition: all -.4s ease-in;
-        -o-transition: all -.4s ease-in;
-        transition: all -.4s ease-in;
         width: 80%;
         display: -moz-grid;
         display: -ms-grid;
@@ -1023,7 +1007,12 @@ footer{
                 }
                 .intro{
                     margin: auto 0;
-                    .intro-description{ font-size: 32px; font-weight: 500; margin-right: 110px; text-align: justify;}
+                    .intro-description{
+                        font-size: 36px;
+                        font-weight: 100;
+                        margin-right: 110px;
+                        text-align: justify;
+                        margin-top: -150px;}
                 }
             }
             .graduate{
@@ -1045,6 +1034,7 @@ footer{
                     -o-border-radius: 15px;
                     border-radius: 15px;
                     padding: 20px 10px;
+                    text-align: left;
                 }
                 .graduate-info:hover{ box-shadow: 0 0 10px var(--primary-color); font-weight: 600;}
                 .university{
@@ -1062,7 +1052,7 @@ footer{
                         font-weight: 600;
                         margin-bottom: 40px;
                         font-style: italic;
-                        text-align: end;
+                        margin-left: 10px;
                     }
                     .graduate-link{
                         font-size: 21px;
@@ -1102,11 +1092,9 @@ footer{
     }
     .experience{
         width: 100%;
-        text-align: center;
         margin: 20px 0;
         margin-bottom: 60px;
-        .experience-title{ font-size: 60px; letter-spacing: 2px; margin-bottom: 15px;}
-        .experience-freelance{font-size: 25px;margin-bottom: 15px;}
+        .experience-freelance{font-size: 25px;margin-bottom: 15px; text-align: center;}
         .experience-job{
             display: -webkit-box;
             display: -moz-box;
@@ -1121,105 +1109,65 @@ footer{
                 padding: 30px;
                 overflow: hidden;
                 cursor: pointer;
+                text-align: left;
                 .experience-job_title{font-size: 25px;margin-bottom: 25px;}
                 .experience-job_skills{
                     list-style-type:  disclosure-closed;
                     .experience-job_skill{ margin-bottom: 15px; font-size: 14px;}
                 }
-                .experience-job_icon{ width: 850px; margin-top: -190px; margin-left: 40px; transform: rotate(-35deg); }
+                .experience-job_icon{ width: 850px; margin-top: -190px; margin-left: 0px; transform: rotate(-35deg); }
             }
             .experience-job_card:hover{
-                background-color: var(--primary-color);
+                background-color: var(--secondary-color);
                 color: white;
                 -webkit-border-radius: 15px;
                 -moz-border-radius: 15px;
                 -ms-border-radius: 15px;
                 -o-border-radius: 15px;
                 border-radius: 15px;
-                box-shadow: 5px 5px 5px var(--secondary-color);
+                box-shadow: 5px 5px 10px var(--primary-color);
                 .experience-job_skills{.experience-job_skill{font-size: 15px;}}
                 .experience-job_icon{filter: brightness(100);}
             }
         }
     }
     .training{
-        text-align: center;
-        width: 50%;
         margin: 20px auto;
-        .training-title{
-            width: 100%;
-            margin: 20px auto;
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: var(--secondary-color);
-            color: white;
-            -webkit-border-radius: 20px;
-            -moz-border-radius: 20px;
-            -ms-border-radius: 20px;
-            -o-border-radius: 20px;
-            border-radius: 20px;
-            box-shadow: 5px 5px 5px var(--box-shadow-color);
-            .training-title_img{
-                width: 125px;
-                height: 125px;
-                margin: 15px;
-                -webkit-border-radius: 50%;
-                -moz-border-radius: 50%;
-                -ms-border-radius: 50%;
-                -o-border-radius: 50%;
-                border-radius: 50%;
-            }
-            .training-title_name{font-size: 32px;}
-        }
-        .training-title:hover{color: var(--primary-color);}
+        background-color: var(--secondary-color);
+        background-image: url(../img/training/bg.PNG);
+        background-size: 100% 150%;
+        padding: 20px 0;
+        color: white;
         .training-company{
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
             display: -webkit-flex;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
-            width: 80%;
+            width: 100%;
             .training-company_img{
-                width: 50px;
-                height: 50px;
-                -webkit-border-radius: 50%;
-                -moz-border-radius: 50%;
-                -ms-border-radius: 50%;
-                -o-border-radius: 50%;
-                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                box-shadow: 0 4px 10px rgba(211, 210, 210, 0.705);
                 -webkit-border: 2px solid var(--secondary-color);
                 -moz-border: 2px solid var(--secondary-color);
                 -ms-border: 2px solid var(--secondary-color);
                 -o-border: 2px solid var(--secondary-color);
                 border: 2px solid var(--secondary-color);
-                margin-left: 30px;
+                margin: 0 30px 0 -80px;
+                background-color: white;
+                padding: 5px;
             }
-            .training-company_title{font-size: 16px;}
+            .training-company_title{font-size: 18px;}
         }
         .training-info{
             width: 100%;
             margin: 15px 0;
-            -webkit-border: 2px solid var(--secondary-color);
-            -moz-border: 2px solid var(--secondary-color);
-            -ms-border: 2px solid var(--secondary-color);
-            -o-border: 2px solid var(--secondary-color);
-            border: 2px solid var(--secondary-color);
-            -webkit-border-radius: 20px;
-            -moz-border-radius: 20px;
-            -ms-border-radius: 20px;
-            -o-border-radius: 20px;
-            border-radius: 20px;
             padding: 15px;
-            .training-info_title{ margin: 10px; font-size: 14px; word-spacing: 1px;}
+            .training-info_title{ margin: 10px; font-size: 14px; word-spacing: 1px; text-align: start;}
             .training-info_languages{
-                height: 10vh;
                 display: -webkit-box;
                 display: -moz-box;
                 display: -ms-flexbox;
@@ -1228,90 +1176,113 @@ footer{
                 justify-content: space-around;
                 list-style-type: none;
                 font-weight: bold;
+                padding: 10px;
+                flex-wrap: wrap;
                 .training-info_language{
-                    -webkit-text-decoration: underline;
-                    -moz-text-decoration: underline;
-                    -ms-text-decoration: underline;
-                    -o-text-decoration: underline;
-                    text-decoration: underline;
-                    .training-info_language-title{margin-bottom: 10px;}
-                    .training-info_language-img{ width: 40px; height: 40px; object-fit: cover; }
+                    padding: 20px;
+                    margin: 10px;
+                    -webkit-border-top: 3px solid var(--primary-color);
+                    -moz-border-top: 3px solid var(--primary-color);
+                    -ms-border-top: 3px solid var(--primary-color);
+                    -o-border-top: 3px solid var(--primary-color);
+                    border-top: 3px solid var(--primary-color);
+                    background-color: white;
+                    background-image: url(../img/training/bg.PNG);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    box-shadow: 0 4px 10px rgba(211, 210, 210, 0.705);
+                    cursor: pointer;
+                    .training-info_language-img{ width: 75px; height: 75px; }
+                    .training-info_language-title{
+                        margin-top: 15px;
+                        color: var(--secondary-color);
+                    }
+                }
+                .training-info_language:hover{
+                    transform: rotate(-8deg);
                 }
             }
         }
-        .training-info:hover{ background-color: var(--secondary-color); color: white;}
-        .training-link{ font-size: 19px; margin-bottom: 20px; .training-link_link{font-weight: bold;} }
-        .training-date{ font-style: italic; font-size: 18px; margin-left: 280px; }
+        .training-site{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 30px;
+            .training-link{
+            font-size: 19px;
+            margin-bottom: 20px;
+            text-align: start;
+            .training-link_link{
+                font-weight: bold;
+                -webkit-text-decoration: underline;
+                -moz-text-decoration: underline;
+                -ms-text-decoration: underline;
+                -o-text-decoration: underline;
+                text-decoration: underline;
+                color: var(--primary-color);
+            }
+        }
+        .training-date{ font-style: italic; font-size: 18px;}
+        }
     }
     .skills{
-        .skills-title{ font-size: 32px; margin: 15px;}
         .skills-container{
-            width: 100%;
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 20px 0;
+            width: calc(100% -40px);
+            display: block;
+            margin: 20px;
             .skills-type{
-                width: 35%;
-                height: auto;
-                background-image: url(https://www.cecimo.eu/wp-content/uploads/2013/09/skills-1024x737.jpg);
-                background-size: 100%;
-                background-repeat: no-repeat;
-                border-top: 3px solid var(--secondary-color);
-                -webkit-border-radius: 15px;
-                -moz-border-radius: 15px;
-                -ms-border-radius: 15px;
-                -o-border-radius: 15px;
-                border-radius: 15px;
-                padding: 10px;
-                .skills-type_title{margin: 10px 0;}
-                .skills-type_list{
-                    width: 100%;
-                    height: 6vh;
-                    cursor: pointer;
-                    -webkit-border-radius: 10px;
-                    -moz-border-radius: 10px;
-                    -ms-border-radius: 10px;
-                    -o-border-radius: 10px;
-                    border-radius: 10px;
-                    padding: 5px;
-                    color: var(--secondary-color);
-                    font-weight: 500;
-                    .skills-type_list-item{
-                        background-color: var(--secondary-color);
-                        color: white;
-                        -webkit-border: 2px solid black;
-                        -moz-border: 2px solid black;
-                        -ms-border: 2px solid black;
-                        -o-border: 2px solid black;
-                        border: 2px solid black;
-                    }
-                }
-                .skills-type_list:focus{ outline: none; box-shadow: 0 0 10px var(--secondary-color);}
-                .skill-progress{
+                width: 100%;
+                .skills-type_title{margin: 10px 0; font-size: 24px;}
+                .basic-skills-cards, .soft-skills-cards {
+                    display: grid;
+                    grid-template-columns: repeat(4, 22%);
+                    justify-content: space-around;
+                    align-items: center;
+                    gap: 30px;
                     margin: 20px;
-                    .skill-progress_title{ font-size: 12px; margin-bottom: 10px;}
-                    .skill-progress-bar{
-                        background-color: var(--box-shadow-color);
-                        margin: 10px 0;
+                    .skill-card{
                         width: 100%;
-                        height: 4vh;
-                        line-height: 4vh;
-                        text-align: center;
-                        -webkit-border-radius: 5px;
-                        -moz-border-radius: 5px;
-                        -ms-border-radius: 5px;
-                        -o-border-radius: 5px;
-                        border-radius: 5px;
-                        .skill-progress-bar_value{
-                            background-color: var(--primary-color);
+                        height: 45vh;
+                        position: relative;
+                        .card-bg{
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            z-index: -1;
                             color: white;
-                            border-start-start-radius: 5px;
-                            border-end-start-radius: 5px;
+                            background-image: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+                            .skill-id{
+                                direction: rtl;
+                                margin: 20px;
+                                font-size: 18px;
+                            }
+                        }
+                        .card-info{
+                            width: 100%;
+                            height: 100%;
+                            background-color: rgb(218, 216, 216);
+                            border-top-right-radius: 100%;
+                            padding: 15px;
+                            overflow: hidden;
+                            box-shadow: -5px 5px 10px var(--secondary-color);
+                            .skill-img{
+                                width: 40%;
+                                height: 40%;
+                                border-radius: 10%;
+                                margin: 20px;
+                            }
+                            .skill-title{
+                                font-size: 20px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                    .skill-card:hover{
+                        .card-info{
+                            transform: rotate(-5deg);
+                        }
+                        .skill-img{
+                            transform: scale(1.15) translate(-1%, 1%) rotate(5deg);
                         }
                     }
                 }
@@ -1320,20 +1291,6 @@ footer{
     }
     .achievements{
         margin-bottom: 20px;
-        .achievements-title{
-            text-align: center;
-            font-size: 32px;
-            background-color: var(--secondary-color);
-            color: white;
-            width: 50%;
-            margin: 40px auto;
-            padding: 10px;
-            -webkit-border-radius: 15px;
-            -moz-border-radius: 15px;
-            -ms-border-radius: 15px;
-            -o-border-radius: 15px;
-            border-radius: 15px;
-        }
         .achievements-cards{
             display: -webkit-box;
             display: -moz-box;
@@ -1371,7 +1328,7 @@ footer{
                     border-radius: 15px;
                     .card-title_link{color: var(--secondary-color);}
                 }
-                .card-date{ font-size: 14px; margin-left: 40px; font-style: italic; margin-bottom: 10px; }
+                .card-date{ font-size: 14px; margin-left: 10px; font-style: italic; margin-bottom: 10px; }
                 .card-description{margin-bottom: 10px; text-align: justify; }
                 .card-link{
                     text-align: center;
@@ -1390,7 +1347,7 @@ footer{
                 }
             }
             .achievement-card:hover{
-                background-color: var(--primary-color);
+                background-color: var(--secondary-color);
                 -webkit-border: none;
                 -moz-border: none;
                 -ms-border: none;
@@ -1399,27 +1356,15 @@ footer{
                 box-shadow: 5px 5px 5px var(--secondary-color);
                 color: white;
                 .card-title{.card-title_link{color: white;}}
-                .card-link{ background-color: white; color: var(--primary-color);}
+                .card-link{ background-color: white; color: var(--secondary-color);}
             }
         }
     }
     .languages{
-        width: 75%;
-        padding: 10px;
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        .languages-title{
-            width: 25%;
-            font-size: 32px;
-            margin-left: 40px;
-        }
+        display: block;
+        margin: 20px;
         .languages-list{
-            width: 75%;
+            width: 100%;
             list-style-type: none;
             display: -webkit-box;
             display: -moz-box;
@@ -1427,7 +1372,7 @@ footer{
             display: -webkit-flex;
             display: flex;
             justify-content: space-around;
-            .languages-list-item{font-size: 18px;}
+            .languages-list-item{font-size: 28px;}
             .languages-list-item:hover{
                 -webkit-text-decoration: underline;
                 -moz-text-decoration: underline;
@@ -1435,23 +1380,25 @@ footer{
                 -o-text-decoration: underline;
                 text-decoration: underline;
                 line-height: 20px;
-                font-size: 20px;
+                font-size: 30px;
                 color: var(--primary-color);
             }
         }
     }
 }
+.experience-title{ font-size: 60px; letter-spacing: 2px; margin: 20px; text-align: center;}
 @media (max-width: 768px){
     .cv-main{
         .slider{
             .slide{
                 height: 110vh;
                 padding: 10px;
-                background-size: 100% 100%;
+                background-size: auto 100%;
+                background-position: 35%;
                 .introduction{
                     display: block;
                     .myImg{margin-top: 75px;}
-                    .intro{.intro-description{ font-size: 22px; margin-right: 0px;}}
+                    .intro{.intro-description{ font-size: 22px; margin-right: 0px; margin-top: 0; font-weight: 400;}}
                 }
                 .graduate{
                     display: block;
@@ -1473,45 +1420,63 @@ footer{
                     width: calc(100% - 40px);
                     margin: 30px 20px;
                     .experience-job_skills{.experience-job_skill{ margin-bottom: 20px; font-size: 13px;}}
-                    .experience-job_icon{ margin-top: -160px; margin-left: -150px; transform: rotate(-25deg); }
+                    .experience-job_icon{ margin-top: -190px; margin-left: -30px; transform: rotate(-25deg); }
                 }
                 .experience-job_card:hover{.experience-job_skills{.experience-job_skill{font-size: 14px;}}}
             }
         }
         .training{
-            width: 90%;
-            .training-title{
-                .training-title_img{ width: 100px; height: 100px;}
-                .training-title_name{font-size: 28px;}
+            background-size: cover;
+            padding: 20px 0;
+            .experience-title{font-size: 50px;}
+            .training-company{
+                .training-company_img{ width: 80px; height: 80px; margin: 0 15px; }
+                .training-company_title{font-size: 16px;}
             }
-            .training-company{width: 95%;}
             .training-info{
-                padding: 10px;
-                .training-info_title{font-size: 15px;}
+                padding: 0px;
+                .training-info_title{ font-size: 11px; word-spacing: 0px; font-weight: 400;}
                 .training-info_languages{
-                    height: 45vh;
-                    display: flex;
-                    flex-wrap: wrap;
                     .training-info_language{
-                        height: 5vh;
-                        margin: 9px;
-                        .training-info_language-title{ margin-bottom: 5px; font-size: 14px;}
-                        .training-info_language-img{ width: 70px; height: 70px; object-fit: contain; }
+                        .training-info_language-img{ width: 85px; height: 85px; }
+                        .training-info_language-title{ margin-top: 10px;}
                     }
+                    .training-info_language:hover{ transform: rotate(-10deg);}
                 }
             }
-            .training-date{ font-size: 17px; margin-left: 230px;}
+            .training-site{
+                text-align: start;
+                display: block;
+                .training-link{
+                font-size: 17px;
+                margin-bottom: 10px;
+            }
+            .training-date{ font-size: 16px;}
+            }
         }
         .skills{
             .skills-container{
-                width: calc(100% - 40px);
-                display: block;
-                margin: 15px;
-                .skills-type{ margin: 0 auto; width: calc(100% - 20px); margin-bottom: 40px; }
+                .skills-type{
+                    .basic-skills-cards, .soft-skills-cards {
+                        grid-template-columns: repeat(2, 48%);
+                        gap: 20px;
+                        .skill-card{
+                            height: 40vh;
+                            .card-bg{
+                                background-image: linear-gradient(-45deg, var(--secondary-color), var(--primary-color));
+                                .skill-id{ margin: 25px; font-size: 19px;}
+                            }
+                            .card-info{
+                                padding: 20px;
+                                .skill-img{height: 35%;}
+                                .skill-title{font-size: 18px;}
+                            }
+                        }
+                    }
+                }
             }
         }
         .achievements{
-            .achievements-title{width: 75%;}
             .achievements-cards{
                 display: block;
                 .achievement-card{
@@ -1524,11 +1489,14 @@ footer{
             }
         }
         .languages{
-            width: 90%;
+            width: 100%;
             display: block;
-            .languages-title{ width: 100%; margin-bottom: 20px;}
-            .languages-list{ width: 100%; .languages-list-item{font-size: 18px;} }
+            .languages-list{
+                .languages-list-item{font-size: 18px;}
+                .languages-list-item:hover{font-size: 22px;}
+            }
         }
+        .experience-title{letter-spacing: 1px;}
     }
 }
 @media (max-width: 992px) and (min-width: 768px) {
@@ -1560,47 +1528,48 @@ footer{
                     width: 47%;
                     .experience-job_title{font-size: 23px;}
                     .experience-job_skills{.experience-job_skill{font-size: 13px;}}
-                    .experience-job_icon{ width: 600px; margin-top: -140px; margin-left: 30px; }
+                    .experience-job_icon{ width: 600px; margin-top: -135px; margin-left: -45px; }
                 }
                 .experience-job_card:hover{.experience-job_skills{.experience-job_skill{font-size: 14px;}}}
             }
         }
         .training{
-            width: 75%;
-            .training-title{
-                margin: 25px auto;
-                .training-title_img{ width: 100px; height: 100px; }
-                .training-title_name{ font-size: 30px; margin-left: -100px; }
+            background-size: auto;
+            .training-company{
+                .training-company_img{ width: 70px; height: 70px;}
+                .training-company_title{font-size: 17px;}
             }
-            .training-company{ width: 75%; .training-company_img{margin-left: 40px;} }
             .training-info{
-                margin: 20px 0;
-                padding: 20px;
-                .training-info_title{ margin: 10px 0; font-size: 13px; word-spacing: 0px; }
+                margin: 0;
+                .training-info_title{ margin: 0px; font-size: 13px; margin-left: 25px;}
                 .training-info_languages{
-                    margin-bottom: 10px;
                     .training-info_language{
-                        .training-info_language-title{margin-bottom: 10px;}
-                        .training-info_language-img{ width: 50px; height: 50px; }
+                        .training-info_language-img{ width: 80px; height: 80px; }
                     }
                 }
             }
-            .training-link{ font-size: 18px; margin-bottom: 15px; }
-            .training-date{ font-size: 17px; margin-left: 240px; }
+            .training-site{
+                margin: 0 20px;
+                .training-date{ font-size: 17px;}
+            }
         }
         .skills{
-            .skills-title{font-size: 30px;}
             .skills-container{
+                width: calc(100% -40px);
                 .skills-type{
-                    width: 45%;
-                    .skills-type_title{margin: 15px 0;}
-                    .skills-type_list{height: 7vh;}
-                    .skill-progress{ .skill-progress-bar{ height: 5vh; line-height: 5vh; } }
+                    .basic-skills-cards, .soft-skills-cards {
+                        grid-template-columns: repeat(3, 31%);
+                        gap: 20px;
+                        .skill-card{
+                            height: 40vh;
+                            .card-bg{ .skill-id{ margin: 25px;}}
+                            .card-info{ .skill-img{ width: 45%;}}
+                        }
+                    }
                 }
             }
         }
         .achievements{
-            .achievements-title{font-size: 30px;}
             .achievements-cards{
                 gap: 0px;
                 .achievement-card{
@@ -1608,15 +1577,17 @@ footer{
                     height: 45vh;
                     padding: 15px;
                     .card-title{ font-size: 19px; margin-bottom: 15px; padding: 0px; }
-                    .card-date{ font-size: 13px; margin-left: 50px; margin-bottom: 15px; }
+                    .card-date{ font-size: 13px; margin-left: 10px; margin-bottom: 15px; }
                     .card-link{margin: 0 160px;}
                 }
             }
         }
         .languages{
             padding: 15px;
-            .languages-title{font-size: 30px;}
-            .languages-list{.languages-list-item{font-size: 17px;}}
+            .languages-list{
+                .languages-list-item{font-size: 17px;}
+                .languages-list-item:hover{font-size: 20px;}
+            }
         }
     }
 }

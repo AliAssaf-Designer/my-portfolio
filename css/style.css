@@ -1192,6 +1192,7 @@ footer{
                     background-size: cover;
                     box-shadow: 0 4px 10px rgba(211, 210, 210, 0.705);
                     cursor: pointer;
+                    text-align: center;
                     .training-info_language-img{ width: 75px; height: 75px; }
                     .training-info_language-title{
                         margin-top: 15px;

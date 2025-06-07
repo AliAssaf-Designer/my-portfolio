@@ -1,7 +1,7 @@
 let basic_skills_info = [
-    {id: "1", skill: "Good knowledge of HTML5, CSS3 & JavaScript",icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJfTzkfiPm9hZUu-J9VyVAVg2z5f4vi3QP_g&s"},
+    {id: "1", skill: "Good knowledge of HTML5, CSS3 & JavaScript",icon: "https://www.myclubtees.com/wp-content/uploads/html5-css3-and-javascript-color.jpg"},
     {id: "2", skill: "Good knowledge of Bootstrap, Tailwind & jQurey",icon: "https://assets.viget.com/blog/bootstrap-vs-tailwind.png"},
-    {id: "3", skill: "Familiarity of SASS preprocessor",icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png"},
+    {id: "3", skill: "Familiarity of SASS preprocessor",icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/800px-Sass_Logo_Color.svg.png"},
     {id: "4", skill: "Knowledge of React framework",icon: "https://onextrapixel.com/wp-content/uploads/2016/04/reactjs-thumb.jpg"},
     {id: "5", skill: "Knowledge of responsive design principles",icon: "https://www.andacademy.com/resources/wp-content/uploads/2025/05/inner_2e.webp"},
     {id: "6", skill: "Understanding of code versioning tool (Git)",icon: "https://www.javacodegeeks.com/wp-content/uploads/2023/03/git.png"},

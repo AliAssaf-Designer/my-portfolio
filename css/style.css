@@ -1115,7 +1115,7 @@ footer{
                     list-style-type:  disclosure-closed;
                     .experience-job_skill{ margin-bottom: 15px; font-size: 14px;}
                 }
-                .experience-job_icon{ width: 850px; margin-top: -260px; margin-left: 80px; transform: rotate(-35deg); }
+                .experience-job_icon{ width: 850px; margin-top: -210px; margin-left: 40px; transform: rotate(-35deg); }
             }
             .experience-job_card:hover{
                 background-color: var(--secondary-color);
@@ -1421,7 +1421,7 @@ footer{
                     width: calc(100% - 40px);
                     margin: 30px 20px;
                     .experience-job_skills{.experience-job_skill{ margin-bottom: 20px; font-size: 13px;}}
-                    .experience-job_icon{ margin-top: -190px; margin-left: -30px; transform: rotate(-25deg); }
+                    .experience-job_icon{ margin-top: -210px; margin-left: -110px; transform: rotate(-25deg); }
                 }
                 .experience-job_card:hover{.experience-job_skills{.experience-job_skill{font-size: 14px;}}}
             }
@@ -1462,6 +1462,7 @@ footer{
                         grid-template-columns: 90%;
                         gap: 20px;
                         .skill-card{
+                            width: 100%;
                             height: 70vh;
                             .card-bg{
                                 background-image: linear-gradient(-45deg, var(--secondary-color), var(--primary-color));
@@ -1479,7 +1480,7 @@ footer{
         }
         .achievements{
             .experience-title{
-                font-size: 55px;
+                font-size: 50px;
             }
             .achievements-cards{
                 display: block;
@@ -1493,7 +1494,7 @@ footer{
             }
         }
         .languages{
-            width: 100%;
+            width: 95%;
             display: block;
             .languages-list{
                 .languages-list-item{font-size: 18px;}

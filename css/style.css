@@ -899,7 +899,7 @@ footer{
             justify-content: space-around;
             margin: 20px 20px;
             .contact-item{
-                width: 90%;
+                width: 95%;
                 margin-bottom: 15px;
                 justify-content: flex-start;
                 .contact-item_img{margin-right: 5px;}
@@ -913,7 +913,7 @@ footer{
             .links-body{
                 display: block;
                 .links-item{
-                    width: 90%;
+                    width: 95%;
                     justify-content: flex-start;
                     margin-bottom: 15px;
                     .social-link{font-weight: 900;}
@@ -1421,7 +1421,7 @@ footer{
                     width: calc(100% - 40px);
                     margin: 30px 20px;
                     .experience-job_skills{.experience-job_skill{ margin-bottom: 20px; font-size: 13px;}}
-                    .experience-job_icon{ margin-top: -210px; margin-left: -110px; transform: rotate(-25deg); }
+                    .experience-job_icon{ margin-top: -190px; margin-left: -130px; transform: rotate(-25deg); }
                 }
                 .experience-job_card:hover{.experience-job_skills{.experience-job_skill{font-size: 14px;}}}
             }
@@ -1463,7 +1463,7 @@ footer{
                         gap: 20px;
                         .skill-card{
                             width: 100%;
-                            height: 70vh;
+                            height: 60vh;
                             .card-bg{
                                 background-image: linear-gradient(-45deg, var(--secondary-color), var(--primary-color));
                                 .skill-id{ margin: 25px; font-size: 23px;}

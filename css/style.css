@@ -1115,7 +1115,7 @@ footer{
                     list-style-type:  disclosure-closed;
                     .experience-job_skill{ margin-bottom: 15px; font-size: 14px;}
                 }
-                .experience-job_icon{ width: 850px; margin-top: -190px; margin-left: 0px; transform: rotate(-35deg); }
+                .experience-job_icon{ width: 850px; margin-top: -260px; margin-left: 80px; transform: rotate(-35deg); }
             }
             .experience-job_card:hover{
                 background-color: var(--secondary-color);
@@ -1459,18 +1459,18 @@ footer{
             .skills-container{
                 .skills-type{
                     .basic-skills-cards, .soft-skills-cards {
-                        grid-template-columns: repeat(2, 48%);
+                        grid-template-columns: 90%;
                         gap: 20px;
                         .skill-card{
-                            height: 40vh;
+                            height: 70vh;
                             .card-bg{
                                 background-image: linear-gradient(-45deg, var(--secondary-color), var(--primary-color));
-                                .skill-id{ margin: 25px; font-size: 19px;}
+                                .skill-id{ margin: 25px; font-size: 23px;}
                             }
                             .card-info{
                                 padding: 20px;
-                                .skill-img{height: 35%;}
-                                .skill-title{font-size: 18px;}
+                                .skill-img{ width: 50%; height: 55%; margin: 40px 0;}
+                                .skill-title{font-size: 24px;}
                             }
                         }
                     }
@@ -1478,6 +1478,9 @@ footer{
             }
         }
         .achievements{
+            .experience-title{
+                font-size: 55px;
+            }
             .achievements-cards{
                 display: block;
                 .achievement-card{

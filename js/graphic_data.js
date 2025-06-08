@@ -382,6 +382,24 @@ const graphic_data = [
         name: "image inside text 4",
         type: "Text",
         description: "An image inside some text."
+    },
+    {   id: "64",
+        photo: "https://up6.cc/2025/06/174936749966911.jpg",
+        name: "Ali Designs logo",
+        type: "Logo",
+        description: "Logo for Ali Designs facebook page."
+    },
+    {   id: "65",
+        photo: "https://up6.cc/2025/06/174936742803691.jpg",
+        name: "Ali Designs Cover Page",
+        type: "Banner",
+        description: "A Banner that represent facebook cover page."
+    },
+    {   id: "66",
+        photo: "https://up6.cc/2025/06/174936728731521.jpg",
+        name: "Eid Aladha poster",
+        type: "Poster, Islamic",
+        description: "An poster for Eid Aladha."
     }
 ];
 
@@ -422,6 +440,7 @@ for (let i = 0; i < type_list_item.length; i++) {
         graphic_cards.innerHTML = "";
         if(type_list_item[i].innerHTML == "ALL"){
             show_more_btn.style.display = "block";
+            graphic_cards.style.gridTemplateColumns = "repeat(3, 32%)";
             for (let i = 0; i < 6; i++) create_card(graphic_cards, graphic_data[i]);
         }
         for (let j = 0; j < graphic_data.length; j++) {
@@ -429,7 +448,12 @@ for (let i = 0; i < type_list_item.length; i++) {
                 graphic_cards.innerHTML = "";
                 show_more_btn.style.display = "none";
                 listed_graphic_data.push(graphic_data[j]);
-                for (let i = 0; i < listed_graphic_data.length; i++) create_card(graphic_cards, listed_graphic_data[i]);
+                graphic_cards.style.gridTemplateColumns = "repeat(2, 47%)";
+                for (let i = 0; i < listed_graphic_data.length; i++) {
+                    create_card(graphic_cards, listed_graphic_data[i]);
+                    const cards = document.querySelectorAll(".card");
+                    cards.forEach(card => card.style.width = "auto");
+                }
             }
         }
     });

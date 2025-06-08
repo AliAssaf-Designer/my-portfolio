@@ -25,7 +25,7 @@ function skills(skills_info, container){
         container.innerHTML += `<div class="skill-card">
                                     <div class="card-bg"><h5 class="skill-id">${basic_skill.id}</h5></div>
                                     <div class="card-info">
-                                        <img src="${basic_skill.icon}" class="skill-img" >
+                                        <img src="${basic_skill.icon}" class="skill-img" alt="skill img">
                                         <h4 class="skill-title">${basic_skill.skill}</h4>
                                     </div>
                                 </div>`;

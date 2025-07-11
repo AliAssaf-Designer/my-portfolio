@@ -400,6 +400,12 @@ const graphic_data = [
         name: "Eid Aladha poster",
         type: "Poster, Islamic",
         description: "An poster for Eid Aladha."
+    },
+    {   id: "67",
+        photo: "https://up6.cc/2025/07/175226203518591.jpg",
+        name: "Let's Be Strong",
+        type: "Poster",
+        description: "Let's be strong, let's be fast with an image of horses from it."
     }
 ];
 

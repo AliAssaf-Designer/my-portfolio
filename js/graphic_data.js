@@ -406,7 +406,43 @@ const graphic_data = [
         name: "Let's Be Strong",
         type: "Poster",
         description: "Let's be strong, let's be fast with an image of horses from it."
-    }
+    },
+    {   id: "68",
+        photo: "https://up6.cc/2025/07/175290233724051.jpg",
+        name: "The Beach Poster",
+        type: "Poster",
+        description: "An advirtisment poster it can represent the beach or something on the beach or any thing close."
+    },
+    {   id: "69",
+        photo: "https://up6.cc/2025/07/175290274760281.png",
+        name: "War of flowers",
+        type: "Poster",
+        description: "A poster for the social media."
+    },
+    {   id: "70",
+        photo: "https://up6.cc/2025/07/175290302658221.jpg",
+        name: "Wild world",
+        type: "Poster",
+        description: "A poster for the social media."
+    },
+    {   id: "71",
+        photo: "https://up6.cc/2025/07/175290322248741.jpg",
+        name: "موالح",
+        type: "Poster",
+        description: "A poster for the social media to advertise citrus fruits."
+    },
+    {   id: "72",
+        photo: "https://up6.cc/2025/07/175290334283361.jpg",
+        name: "Poster and advertisement design services",
+        type: "Poster",
+        description: "A poster for the social media to providing poster and advertisement design services."
+    },
+    {   id: "73",
+        photo: "https://up6.cc/2025/07/175290346381371.jpg",
+        name: "Quiz App poster",
+        type: "Poster",
+        description: "A poster for the social media to advertise for a quiz app."
+    },
 ];
 
 let graphic_cards = document.querySelector(".graphic-cards");
